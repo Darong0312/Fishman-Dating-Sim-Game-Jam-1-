@@ -1,0 +1,19 @@
+==== meet_swordfish
+
+swordfish choosing...
+
+* choose swordfish      ->intro
+
+* not choose swordfish ->intro
+
+=== choose_swordfish
+
+~ possible_choices += SwordFish
+~ date_times ++
+
+->intro
+
+
+=== sword_end
+swordfish end
+->conclusion

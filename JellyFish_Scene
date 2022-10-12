@@ -1,0 +1,19 @@
+==== meet_jellyfish
+
+jellyfish choosing...
+
+* choose jellyfish          ->choose_jelly
+
+* not choose jellyfish      ->intro
+
+=== choose_jelly
+
+~ possible_choices += JellyFish
+~ date_times ++
+
+->intro
+
+
+=== jelly_end
+jellyfish end
+->conclusion
