@@ -1,0 +1,19 @@
+==== meet_blobfish
+
+blobfish choosing...
+
+* choose blobfish ->choose_blob
+
+* not choose blobfish->intro
+
+=== choose_blob
+
+~ possible_choices += BlobFish
+~ date_times ++
+
+->intro
+
+
+=== blod_end
+blobfish end
+->conclusion
