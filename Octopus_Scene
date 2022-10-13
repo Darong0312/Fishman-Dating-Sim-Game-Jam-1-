@@ -1,18 +1,19 @@
 ==== meet_octopus
+~ scene_tracker += OctopusScene
+~ scene_visited ++
 
- 
 octopus choosing...
 
 * choose octopus        ->choose_octopus
 
-* not choose octopus    ->intro
+* not choose octopus    ->scene_track
 
 === choose_octopus
 
 ~ possible_choices += Octopus
 ~ date_times ++
 
-->intro
+->scene_track
 
 
 === octopus_end

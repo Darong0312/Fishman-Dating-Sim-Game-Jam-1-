@@ -1,17 +1,19 @@
 ==== meet_jellyfish
+~ scene_tracker += JellyScene
+~ scene_visited ++
 
 jellyfish choosing...
 
 * choose jellyfish          ->choose_jelly
 
-* not choose jellyfish      ->intro
+* not choose jellyfish      ->scene_track
 
 === choose_jelly
 
 ~ possible_choices += JellyFish
 ~ date_times ++
 
-->intro
+->scene_track
 
 
 === jelly_end

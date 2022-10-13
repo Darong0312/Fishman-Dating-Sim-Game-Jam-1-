@@ -1,17 +1,19 @@
 ==== meet_blobfish
+~ scene_tracker += BlodScene
+~ scene_visited ++
 
 blobfish choosing...
 
-* choose blobfish ->choose_blob
+* choose blobfish       ->choose_blob
 
-* not choose blobfish->intro
+* not choose blobfish   ->scene_track
 
 === choose_blob
 
 ~ possible_choices += BlobFish
 ~ date_times ++
 
-->intro
+->scene_track
 
 
 === blod_end

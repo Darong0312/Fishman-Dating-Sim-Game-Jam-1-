@@ -1,17 +1,19 @@
 ==== meet_swordfish
+~ scene_tracker += SwordScene
+~ scene_visited ++
 
 swordfish choosing...
 
 * choose swordfish      ->choose_swordfish
 
-* not choose swordfish ->intro
+* not choose swordfish  ->scene_track
 
 === choose_swordfish
 
 ~ possible_choices += SwordFish
 ~ date_times ++
 
-->intro
+->scene_track
 
 
 === sword_end
