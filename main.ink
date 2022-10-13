@@ -10,6 +10,7 @@ VAR date_times = 0
 VAR first_choice = false
 VAR Scene = 0
 VAR scene_visited = 0
+VAR choose_none = false
 
 VAR jelly_aff = 0
 VAR blod_aff = 0
@@ -39,7 +40,7 @@ LIST scene_tracker = BlodScene, SwordScene, OctopusScene, JellyScene
 ->scene_track
 
 === scene_track ===
-{first_choice}
+// {first_choice}
 
 { 
 -first_choice == false:
@@ -84,7 +85,8 @@ Make your choice
 * {possible_choices ? Octopus}     Choose Octopus as ending        -> octopus_end
 * {possible_choices ? SwordFish}   Choose Swordfish as ending      -> sword_end
 * {possible_choices ? BlobFish}    Choose Blobfish as ending       -> jelly_end
-* Not dating: Choose AnimateMan as ending     -> animate_man
+* Not dating: Choose AnimateMan as ending     
+-> animate_man
 
 
 === conclusion ===
