@@ -19,5 +19,25 @@ octopus choosing...
 
 
 === octopus_end
-octopus end
+You verse jump back towards Octavia's apartment where you find her penning away at her desk intently with a stack of envelopes piled up, seeminlgy oblivious to your presence.
+
+As you take a step, she whips around and gives you a menancing stare which sends chills throughout your body before instantly returning back to her calm demeanor before.
+
+"Gilbert, what brings you back here? I thought I told you that you don't need to return those clothes to me."
+
+You take a moment to let your heartrate return to normal before saying,
+
+"Well I have something I wanted to ask you."
+
+"Oh? Whatever did you want to ask?"
+
+"Would you wanna go out on a date with me sometime, maybe?", you ask tentatively while curling up your hands behinf your back. 
+
+After what feels like forever, Octavia replies
+{ 
+- octo_aff >= 4:
+
+
+}
+
 ->conclusion
