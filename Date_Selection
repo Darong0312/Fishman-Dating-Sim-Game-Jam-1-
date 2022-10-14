@@ -1,31 +1,32 @@
 #theme: dark
 
 ===choice_check===
-Before making the leap back to your universe, you think back on your experience you've had today. To some, finding out a multiverse exists in your living space can be an outright existential horror but you've kinda enjoyed it. After all, you definitely went outside your comfort zone and got to meet some pretty interesting people you would have never encountered back home. 
+<i>Before making the leap back to your universe, you think back on your experience you've had today. To some, finding out a multiverse exists in your living space can be an outright existential horror but you've kinda enjoyed it. After all, you definitely went outside your comfort zone and got to meet some pretty interesting people you would have never encountered back home. 
 
-Despite your brief time with everbody, you feel like you've developed a special connection with...
+<i>Despite your brief time with everbody, you feel like you've developed a special connection with...
 
 *Octavia
     ~possible_choices = Octopus
-    Octavia. She's straightforward and supportive, maybe a little bit much for some people's tastes but you have always felt like you needed someone to help keep you organized and make decisions in your life.
+    <i>Octavia. She's straightforward and supportive, maybe a little bit much for some people's tastes but you have always felt like you needed someone to help keep you organized and make decisions in your life.
     ->octopus_end
 
 *Bentley
-     ~possible_choices = BlobFish    
-    Bentley. He's totally nerdy which is something that you feel like the two of you can talk about with each other endlessly while having food together over each other's apartments or exploring new restaurants.
+    ~possible_choices = BlobFish    
+    <i>Bentley. He's totally nerdy which is something that you feel like the two of you can talk about with each other endlessly while having food together over each other's apartments or exploring new restaurants.
     ->blod_end
 
-// *Spencer
-//      ~possible_choices = SwordFish
-//     Spencer. He's definitely handsome and wholesome but more than that you feel like his positive outlook on everything and good vibes is what you want <i> some <i> of in your life. Pun intended.
-//     ->sword_end
+*Spencer
+    ~possible_choices = SwordFish
+    <i>Spencer. He's definitely handsome and wholesome but more than that you feel like his positive outlook on everything and good vibes is what you want <i> some <i> of in your life. Pun intended.
+    ->sword_end
 
 *Jasmine
-     ~possible_choices = JellyFish
-    Jasmine. She's unabashedly passionate about the things she loves which contrasts with her quiet aloof aura and makes you feel like you wanna be there with her to see what that passion grows into.
+    ~possible_choices = JellyFish
+    <i>Jasmine. She's unabashedly passionate about the things she loves which contrasts with her quiet aloof aura and makes you feel like you wanna be there with her to see what that passion grows into.
     ->jelly_end
 
 *Nobody
-     ~possible_choices = AnimateMan
-    Nobody. Sure, it was nice meeting everybody but you're not really sure that your first experiences with a person is enough for people to develop a special connection. At least that's what you are telling yourself.
+    ~possible_choices = AnimateMan
+    ~choose_none = true 
+    <i>Nobody. Sure, it was nice meeting everybody but you're not really sure that your first experiences with a person is enough for people to develop a special connection. At least that's what you are telling yourself.
     ->animate_man

@@ -19,5 +19,14 @@ jellyfish choosing...
 
 
 === jelly_end
-jellyfish end
+You verse jump back towards Jasmine's apartment where you find her quickly typing at her computer with small fits of giggling breaking up her rhythym but she doesn't seem to notice you.
+
+You take a step forward
+
+
+{ 
+- jelly_aff >= 3:
+
+
+}
 ->conclusion

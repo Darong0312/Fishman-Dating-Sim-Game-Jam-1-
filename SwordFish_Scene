@@ -126,3 +126,15 @@
     <i>Just as Spencer is about to respond, you can feel yourself fading away from the universe, the world around you goes hazy, and suddenly...</i>
     ~sword_aff ++
     ->random_scene
+    
+    
+=== sword_end ===
+You verse jump back towards Spencer's apartment where you find him practicing his fencing before once again crashing into some conveniently placed
+
+
+{ 
+- sword_aff >= 1:
+
+
+}
+->conclusion

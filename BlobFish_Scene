@@ -19,5 +19,12 @@ blobfish choosing...
 
 
 === blod_end
-blobfish end
+You verse jump back towards Bentley's apartment where you find him focusing on playing some JRPG on his console.
+
+
+{ 
+- blod_aff >= 2:
+
+
+}
 ->conclusion
