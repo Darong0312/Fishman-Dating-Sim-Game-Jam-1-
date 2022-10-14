@@ -1,20 +1,21 @@
 === animate_man ===
-{date_times != 0: 
-    ~choose_none = true
-}
+- <i>You finally return back to your all too familiar apartment, or at least you think it is. With all this alternate universe hopping it's kind of hard to tell. Everything of yours seems to be in place, like the (insert extremely specific object) on the couch to the (insert another extremely specific object) in your room, so you think it's to safe to say that you're home.
 
-You finally return back to your all too familiar apartment, or at least you think it is. With all this alternate universe hopping it's kind of hard to tell. Everything of yours seems to be in place, like the (insert extremely specific object) on the couch to the (insert another extremely specific object) in your room, so you think it's to safe to say that you're home.
+- {choose_none == true:<i> Coming back here alone like this after meeting all your lively interdimensional neighbors, you are suddenly reminded of just how empty it is. The soul crushing loneliness. The lack of a tender touch. GOD you want someone to hold you. It's a good thing you have something special for times just like this.}
 
-{choose_none == true: Coming back here alone like this after meeting all your lively interdimensional neighbors, you are suddenly reminded of just how empty it is. The soul crushing loneliness. The lack of a tender touch. GOD you want someone to hold you. It's a good thing you have something special for times just like this.}
+- {choose_none == false:<i>Home feels so hopelessly empty now after facing that complete rejection. Your soul? shattered. Your dreams? crushed. Your mental health? Cripplingly depressed. There is only one way to drown your sorrow.}
 
-{date_times == 0: Home feels so hopelessly empty now after facing that complete rejection. Your soul? shattered. Your dreams? crushed. Your mental health? Cripplingly depressed. There is only one way to drown your sorrow.}
+- <i>You go to your room and boot up your good ol' PC and click open an application. The title reads on screen "My Love romance <3." Upon starting the game and loading up an old save file, you are greeted by a handsome anime boy.
 
-You go to your room and boot up your good ol' PC and click open an application. The title reads on screen "My Love romance <3." Upon starting the game and loading up an old save file, you are greeted by a handsome anime boy.
+"Hey Gilbert! What a coincidence meeting you out here. Do you live around this area too? We could walk to school together! Oh, only if you want to of course."
 
-"Hey (Goldfish)! What a coincidence meeting you out here. Do you live around this area too? We could walk to school together! Oh, only if you want to of course."
+- <i>Your first crush, Gene Eric Mann, oh how you've missed him. 
+- {choose_none == false: "I'm so sorry I ever tried leaving you, I hope you'll take me back.", <i>you say to the 2D character on the pixelated screen.} 
 
-Your first crush, (insert generic? japanese name), oh how you've missed him. {date_times == 0:I'm so sorry I ever tried leaving you, I hope you'll take me back.} You were always the only one that understood me. I will go anywhere if its with you. 
+- <i>You hover over and click on the box labelled'I will go anywhere if it's with you.' as you give him your own answer. 
 
-You hold hands with your digital boyfriend as you both walk to school together. It was such a lewd act before marriage that it had you swooning. 3D people could never match the amount of excitement you feel in this moment. As long as as you had (insert name), all was right with the world.
+- "You were always the only one that understood me."
+
+- <i>You hold hands with your digital boyfriend as you both walk to school together. It was such a lewd act before marriage that it had you swooning. 3D people could never match the amount of excitement you feel in this moment. As long as as you had Gene Eric Mann, all was right with the world.
 
 -> conclusion
