@@ -1,3 +1,5 @@
+#theme: dark
+
 ==== meet_octopus
 ~ scene_tracker += OctopusScene
 ~ scene_visited ++

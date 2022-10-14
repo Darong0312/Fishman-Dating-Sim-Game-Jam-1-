@@ -1,3 +1,5 @@
+#theme: dark
+
 ==== meet_blobfish
 ~ scene_tracker += BlodScene
 ~ scene_visited ++

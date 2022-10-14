@@ -1,3 +1,5 @@
+#theme: dark
+
 ==== meet_jellyfish
 ~ scene_tracker += JellyScene
 ~ scene_visited ++

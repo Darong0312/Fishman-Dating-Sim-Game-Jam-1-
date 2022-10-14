@@ -1,3 +1,5 @@
+#theme: dark
+
 ==== meet_swordfish
 ~ scene_tracker += SwordScene
 ~ scene_visited ++
@@ -18,5 +20,4 @@ swordfish choosing...
 
 === sword_end
 swordfish end
-->animate_man
 ->conclusion
