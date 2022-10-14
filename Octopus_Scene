@@ -4,19 +4,34 @@
 ~ scene_tracker += OctopusScene
 ~ scene_visited ++
 
-octopus choosing...
+<i>When you blink again, the apartment looks a little different. The bloody scarf is still on the table, but there are some interesting new touches to the room around you. You sift through a pile of clothes that aren’t yours, picking up a shirt that looks like it’s around the size of your own clothes. The pants seem to be your size too. Before you can take a closer look, a sudden voice startles you.</i>
 
-* choose octopus        ->choose_octopus
+"Hey you!" Octavia says.# CLASS: Octopus
 
-* not choose octopus    ->scene_track
+~octopus_facts += poetry_state
 
-=== choose_octopus
+->octopus_state_check
 
-~ possible_choices += Octopus
-~ date_times ++
 
-->scene_track
+=== octopus_state_check ===
 
+* {octopus_facts ? poetry_state} poetry known->poetry
+
+* going to ending ->octopus_end
+
+=== poetry ===
+{
+- octopus_facts ? poetry_state:
+    “I heard you write poetry.”
+    OCTAVIA: Yes! I love writing blood poetry– especially for those I seriously admire!
+-else:
+    You: You have an ink bottle and feather sitting on your desk. Do you like writing?
+
+    OCTAVIA: Why yes I do! I love all forms of writing, especially poetry!
+
+}
+
+->octopus_end
 
 === octopus_end
 You verse jump back towards Octavia's apartment where you find her penning away at her desk intently with a stack of envelopes piled up, seeminlgy oblivious to your presence.

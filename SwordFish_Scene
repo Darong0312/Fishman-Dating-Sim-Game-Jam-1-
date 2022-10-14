@@ -34,7 +34,7 @@
     
 ==fencing===
     
-    <i>Spencer looks at the sword and his face lights up, “I thought I lost that!” he runs up to you and you hand it over. He starts practicing stances right in front of you. It seems like he’s really well practiced. It’s a little funny considering he’s wearing a knitted sweater with pink hearts all over it.</i> # CLASS: SwordFish
+    <i>Spencer looks at the sword and his face lights up</i>, “I thought I lost that!” <i>he runs up to you and you hand it over. He starts practicing stances right in front of you. It seems like he’s really well practiced. It’s a little funny considering he’s wearing a knitted sweater with pink hearts all over it.</i> # CLASS: SwordFish
 
         “How long have you been fencing?” <i>You ask.</i>
 
@@ -42,7 +42,7 @@
     
     *"Wow! That's impressive!" //affinity up
         <i>Spencer looks a little sheepish at first, then puffs out his chest with pride,
-        <i> "I'm the best in my team! I love the competition." <i>He replies. # CLASS: SwordFish
+            "I'm the best in my team! I love the competition." <i>He replies. # CLASS: SwordFish
         He continues to gush for a while about his love of fencing, and his choice of fencing style. He actually sounds a little smart when he talks about it!</i>
        <i> After you show interest, he shows you a couple of moves, (and his muscles hehe) and the two of you spar with a mop and broom. He totally let you win, even though you can tell it's still nice. There was no way that you fully knocked the mop out of his hand. The two of you laugh about it.</i>
         "You're a lot more fun to hang out with than Octavia, she's kinda weird." <i>He says suddenly.# CLASS: SwordFish
@@ -74,7 +74,7 @@
     "But that guy, Bently doesn't get it. He likes the guy with rock powers because he says that he's more 'morally complex' or whatever. When have superheroes ever needed to be morally complex? They punch bad guys and save the day! There doesn't have to be much more to it than that." # CLASS: SwordFish
     
     *"I Like bad guys, actually." //affinity down
-        <i>Spencer gives you an almost heartbroken look,<i> "But why??" # CLASS: SwordFish
+        <i>Spencer gives you an almost heartbroken look,</i> "But why??" # CLASS: SwordFish
         "They're more interesting, good guys tend to be shallow and boring anyway."
         "But they're mean to people!" <i>he protests.<i>
         <i>You shrug,<i> "I mean, it feels like attempting to always be nice or do good is pointless in the face of true evil, don't you think?" <i>you reply.<i>
@@ -95,15 +95,15 @@
 ==volunteering==
     "Oh those?" <i>Spencer gestures to the cookingware strewn about.</i> # CLASS: SwordFish
     "Um... yeah?"
-    <i>Spencer goes to pick them up,<i> "I went to a soup kitchen to volunteer earlier. The group I work with doesn't really have a lot of cooking tools, but I had way too many because I kept ordering them. I wanted to make soup but didn't know which one was best so I kept getting more and more until I had the right size and shape. It took a while but I have them all now!" # CLASS: SwordFish
+    <i>Spencer goes to pick them up,</i> "I went to a soup kitchen to volunteer earlier. The group I work with doesn't really have a lot of cooking tools, but I had way too many because I kept ordering them. I wanted to make soup but didn't know which one was best so I kept getting more and more until I had the right size and shape. It took a while but I have them all now!" # CLASS: SwordFish
    <i> You look at the large number and realize he's right. There's pots AND pans of all shapes and sizes. Saucepans, woks, big cauldrons, he's got all kinds of stuff,<i> "Have you considered donating them?" <i>you ask.<i>
-    <i>Spencer fixes you with a look,<i> "Um... no? Then how would the soup kitchen make soup?" # CLASS: SwordFish
+    <i>Spencer fixes you with a look,</i> "Um... no? Then how would the soup kitchen make soup?" # CLASS: SwordFish
     <i>You sigh.<i>
     
     * "Volunteer work is really cool! Giving back to the community is a wonderful hobby." //affinity up
     Spencer smiles hugely, "Thank you! I'm having a great time! Even though I spill a lot of the soup sometimes..." # CLASS: SwordFish
     "I'm sure you have friends who help out though?" You respond. 
-    He nods vigerously, "Jasmine helps me out sometimes when I spill stuff. She also explains things to me, like <i>an- are- key.</i>." He sounds the word out like he hasn't said it much, it's too long a word for him, "She says that helping the community when The Man won't is the best way to topple our <i>olie-garkie-cal oh-pres-ors</i>." # CLASS: SwordFish
+    <i>He nods vigerously</i>, "Jasmine helps me out sometimes when I spill stuff. She also explains things to me, like <i>an- are- key.</i>." He sounds the word out like he hasn't said it much, it's too long a word for him, "She says that helping the community when The Man won't is the best way to topple our <i>olie-garkie-cal oh-pres-ors</i>." # CLASS: SwordFish
     The two of you talk about the benefits of helping the community. Not only do you feel like a better person for it, but you also get closer to Spencer.
     ~sword_aff ++
     ~jellyfish_facts += anarchist_state

@@ -27,6 +27,7 @@ LIST octopus_facts = clothes_state, poetry_state, stalk_state, dates_states
 LIST jellyfish_facts = writing_state, book_state, anarchist_state
 LIST blod_facts = movie_state, figurines_state
 
+
 Anime Man testing # CLASS: AnimeMan
 Jellyfish Testing # CLASS: JellyFish
 Swordfish testing # CLASS: SwordFish
