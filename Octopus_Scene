@@ -6,45 +6,215 @@
 
 <i>When you blink again, the apartment looks a little different. The bloody scarf is still on the table, but there are some interesting new touches to the room around you. You sift through a pile of clothes that aren’t yours, picking up a shirt that looks like it’s around the size of your own clothes. The pants seem to be your size too. Before you can take a closer look, a sudden voice startles you.</i>
 
-"Hey you!" Octavia says.# CLASS: Octopus
+“Hey you!” # CLASS: Octopus
 
-~octopus_facts += poetry_state
+<i>You freeze and turn towards the voice.</i>
+
+“You’re…”<i> you trail off.</i>
+
+“Octavia. An absolute pleasure to meet you, love,” <i>she replies calmly.</i> # CLASS: Octopus
+
+“Y-yes,” <i>you stutter.</i>
+
+<i>Her aggressive aura sends chills down your spine… but in a strangely comforting way. You muster up your courage and straighten up.</i> “Can you tell me more about yourself?”
+
+<i>Octavia smiles charmingly at you.</i> “Sure, love. I can tell you anything you wish to know about me.” # CLASS: Octopus
+
 
 ->octopus_state_check
 
-
 === octopus_state_check ===
+* { octopus_facts ? poetry_state} “I heard you write poetry.”
+    ->poetry_known
+* { octopus_facts !? poetry_state} “You have an ink bottle and feather sitting on your desk. Do you like writing?
+    ->poetry_unknown
+* { octopus_facts ? clothes_state} “I heard you enjoy knitting in your spare time.”
+    -> knit_known
+* { octopus_facts !? clothes_state} “Is that a ball of yarn on the table?” 
+    -> knit_unknown
+* { octopus_facts ? dates_states} “I heard you’re a big fan of the horror genre.” 
+    -> date_known
+* { octopus_facts !? dates_states} “That’s a lot of horror movie DVD’s you have on your shelf.” 
+    ->date_unknown
+* “What’s something you really enjoy doing that you don’t really tell people about?” 
+    -> stalk
+* <i>You want to ask something else.</i>
+    ->octopus_back
 
-* {octopus_facts ? poetry_state} poetry known->poetry
+=== poetry_known ===
+~octopus_counts++
+“I heard you write poetry.” 
 
-* going to ending ->octopus_end
+“Yes! I love writing blood poetry– especially for those I seriously admire!” <i>she responds happily.</i> # CLASS: Octopus
 
-=== poetry ===
-{
-- octopus_facts ? poetry_state:
-    “I heard you write poetry.”
-    OCTAVIA: Yes! I love writing blood poetry– especially for those I seriously admire!
--else:
-    You: You have an ink bottle and feather sitting on your desk. Do you like writing?
+* “Honestly blood poetry sounds kinda gross…”
+    “I guess so, if that’s the way you see it…” <i>Octavia looks sad.</i> # CLASS:Octopus
+    ~octo_aff --
+    -> octopus_state_check
 
-    OCTAVIA: Why yes I do! I love all forms of writing, especially poetry!
+* “Blood poetry has always seemed interesting to me… how does it work?”
+    “I like using the blood of the people who are close to me, it feels more precious that way.” <i>Octavia grins from ear to ear.</i> # CLASS: Octopus
+    ~octo_aff ++
+    -> octopus_state_check
+    
+=== poetry_unknown ===
+~octopus_counts++
+“Why yes I do! I love all forms of writing, especially poetry!” <i>she replies enthusiastically.</i> # CLASS: Octopus
 
-}
+* “I’ve never been a fan of poetry… but I guess writing is alright.”
+    “Such a shame you’ve never come to appreciate poetry. To each their own I guess…” <i>Octavia tuts, brushing off her cardigan.</i> # CLASS: Octopus
+    ~octo_aff --
+    -> octopus_state_check
 
-->octopus_end
+* “Poetry sounds very romantic.”
+    “You have good taste, love. Poetry is indeed one of the most erotic forms of writing anyone could produce. In fact, I often write with Jasmine. She tends to lean towards her fanfictions, but I certainly can’t blame a girl who often has a bloody nose over a fictional character. At least her bloody noses come in handy when I create my blood poetry.” <i>Octavia smiles, playing with the ends of her hair.</i> # CLASS: Octopus
+    ~octo_aff++
+    -> octopus_state_check
+    
+=== knit_known ===
+~octopus_counts++
+“Knitting started out as something to keep me distracted from things that were happening around me, but now I find myself picking up the yarn whenever I feel bored.” <i>Octavia plays with the frayed end of the ball of yarn.</i> # CLASS: Octopus
+
+* “I don’t know much about knitting, except that my cat used to love destroying yarn if she could ever get her hands on a ball of it.” 
+    “That’s… such a waste of yarn,” <i>Octavia comments sadly.</i> # CLASS: Octopus
+    ~octo_aff --
+    -> octopus_state_check
+
+* “I’d love to learn how to properly knit sometime.”
+    “I’d be happy to teach you,” <i>Octavia grins.</i> # CLASS: Octopus
+    ~octo_aff ++
+    -> octopus_state_check
+
+=== knit_unknown ===
+~octopus_counts++
+“Knitting started out as something to keep me distracted from things that were happening around me, but now I find myself picking up the yarn whenever I feel bored.” <i>Octavia plays with the frayed end of the ball of yarn.</i> # CLASS: Octopus
+
+* “I feel that. It’s nice to find something that keeps me grounded. I used to have a cat, so I’d always buy balls of yarn for him to play with.”
+    “Hm… so you’re more of a cat person.” <i>Octavia thinks to herself.</i> # CLASS: Octopus
+    
+    “Yes, I find cats a lot easier to care for than dogs.” <i>You nod.</i>
+    
+    “I see… cats have a mind of their own. Not really an attribute I always appreciate.” <i>Octavia shakes her head in disapproval.</i> # CLASS: Octopus
+    ~octo_aff --
+    -> octopus_state_check
+
+* “I feel that. It’s nice to find something that keeps me grounded. I tried knitting a couple of times, but I just can’t seem to get the hang of it.”
+    
+    “Practice makes perfect, love. I’m sure if you really wanted to learn I could lend a hand.” <i>Octavia clamps her hands together in front of her chest.</i> # CLASS: Octopus
+
+    “I’d appreciate that a lot.” <i>You smile warmly at her.</i>
+    
+    “Speaking of clothes, have you ever seen anything lying around that wasn’t yours?” <i>Octavia crosses her arms.</i> # CLASS: Octopus
+    
+    <i>You raise an eyebrow, slightly confused.</i> “I’m not sure what you mean.”
+    
+    “Well you see, sometimes I’ll find that Spencer has somehow found his way to an article that I’ve recently knitted. And of course <i>he</i> wouldn’t fit in those clothes with his extra large shoulders.” <i>She scoffs, throwing some hair over her shoulder.</i> “Anyways, he thinks he’s doing everyone a favor when he donates those clothes to charity. Those clothes that I spent hours knitting!” # CLASS: Octopus
+    ~octo_aff ++
+    -> octopus_state_check
+
+=== date_known ===
+~octopus_counts++
+“Ah yes, I grew up loving horror movies. I don’t think my childhood could have been any better if I didn’t have those as my companions growing up. And now in this day and age, what better way to spice up a date than with a horror movie?” <i>Octavia gestures.</i> # CLASS: Octopus
+
+* “I’m pretty scared when it comes to the horror genre, so I think I’d rather not waste my time doing things like that…”
+
+    “Horror is a genre that’s so underappreciated sometimes.” <i>Octavia pauses, fixing her hair.</i> “If people could get past the jumpscares, they’d realize that there’s usually a decent plot going on." # CLASS: Octopus
+    ~octo_aff --
+    -> octopus_state_check
+
+* “Honestly, horror scares the hell out of me, but I love the thrill of it.”
+
+    “Well if we ever got the chance to watch a horror movie together, I’d be more than happy to accompany you during the scary scenes.” <i>Octavia grins.</i> # CLASS: Octopus
+    ~octo_aff ++
+    -> octopus_state_check
+
+=== date_unknown ===
+~octopus_counts++
+<i>Octavia looks delighted that you have noticed.</i> “I pride myself with my collection of horror movies. I have the complete set of every series I’ve ever seen and enjoyed.” # CLASS: Octopus
+
+* “Wow that’s… intense. Personally, I’m too much of a coward to watch horror movies. Don’t think I’d be able to enjoy one without being overly squeamish.”
+
+    “What a shame. I’ve been looking forward to rewatching my favorite series with someone. Guess that’ll have to wait.” <i>Octavia looks visibly disappointed.</i> # CLASS: Octopus
+    ~octo_aff --
+    -> octopus_state_check
+    
+* “You know what. I’m a total coward– I’ll admit that. However, I do enjoy watching horror movies, even if it means I’ll probably be curled up in a fetal position for the majority of the movie.”
+
+“Well I wouldn’t mind being there for you when you’re all scared, love. I used to watch horror movies with Bentley all the time, but he’s no fun! He’s just so used to them after playing so many horror games that he doesn’t get frightened much. I’d much rather watch them with someone who’s trembling by my side." <i>Octavia rambles.</i> # CLASS: Octopus
+    ~octo_aff ++
+    -> octopus_state_check
+
+
+=== stalk ===
+~octopus_counts++
+-
+    * “What’s something you really enjoy doing that you don’t really tell people about?” 
+-
+
+<i>Octavia pauses for a moment.</i> “Hm… well there’s this candy shop I really like visiting. I usually go a couple times a week.” # CLASS: Octopus
+
+“Where is it?” <i>You ask.</i> 
+
+“I believe it is the one on Bay and Ocean.” <i>Octavia points out.</i> # CLASS: Octopus
+
+“Bay and Ocean…?” <i>You think quietly to yourself. That’s the small shop near the building you work in! Was that a coincidence?</i> “Do you have a sweet tooth?”
+
+“I suppose.” <i>Octavia responds briefly.</i> # CLASS: Octopus
+
+“Is there anything else you like doing?” <i>You wonder.</i>
+
+<i>Octavia’s eyes light up.</i> “Rather than something else I like doing, there is something I’m particularly good at.” # CLASS: Octopus
+
+<i>You glance at her.</i> “And what would that be?”
+
+“I pride myself on being able to tell someone’s measurements just from getting a good look at them a few times.” <i>Octavia beams.</i> # CLASS: Octopus
+
+“That’s neat. Speaking of measurements… who did you make all those clothes for? The ones on the table, I mean. They don’t really seem like your size.” <i>You point out.</i>
+
+“O-oh those?” <i>For the first time, Octavia seems to be slightly flustered as she fumbles to put the clothes away.</i> “These were just for practice! I’ve always wanted to make clothes for the person I love, so I was just practicing for the future!” # CLASS: Octopus
+
+* “You know… correct me if I’m wrong, but you frequent a candy shop that’s across the street from where I work, even though you’re not a big sweets person. You’ve also been making clothes for your “future significant other”–”<i>You pause, gesturing with air quotes,</i> “–which happens to be similar to the sizes of clothing I wear.” 
+    
+    <i>Octavia stays silent as you speak, stating the facts that you already know.</i> 
+
+    “So are you by any chance… stalking me?” <i>You piece together.</i>
+    
+    “N-no, of course not, love!” <i>Octavia’s voice trembles as she speaks. She seems to be shrinking towards the shadows.</i> # CLASS: Octopus
+    ~octo_aff --
+    -> octopus_state_check
+    
+* “I think that’s very sweet of you. I guess both literally and figuratively, since you’re visiting a candy shop and knitting clothes for your future significant other.” <i>You chuckle at your own pun.</i>
+
+    <i>Octavia beams.</i> “Oh, love, I was afraid you wouldn’t see it that way.” # CLASS: Octopus
+    
+    “What do you mean?” <i>You question.</i>
+    
+    <i>Octavia sighs sadly.</i> “Well many people seem to misunderstand me sometimes. I’m merely preparing myself for the future, yet people always find some reason to make me the villain.” # CLASS: Octopus
+    
+    “Aw, I’m so sorry about that. I’m sure you’ll find people who appreciate you for who you are.” <i>You comfort her, giving her a soft pat on the back.</i>
+    ~octo_aff ++
+    -> octopus_state_check
+
+
+=== octopus_back ===
+<i>You want to ask another question, but you feel yourself fading out of existence. Sensing that you might be leaving, Octavia shoves a scarf into your hands.</i> “Here, love, so you can visit again!”
+
+<i>You open your mouth to respond but your vision turns black. When you can open your eyes again, you notice that you have returned to your own apartment.</i>
+
+->scene_track
 
 === octopus_end
 You verse jump back towards Octavia's apartment where you find her penning away at her desk intently with a stack of envelopes piled up, seeminlgy oblivious to your presence.
 
 As you take a step, she whips around and gives you a menancing stare which sends chills throughout your body before instantly returning back to her calm demeanor before.
 
-"Gilbert, what brings you back here? I thought I told you that you don't need to return those clothes to me."
+"Gilbert, what brings you back here? I thought I told you that you don't need to return those clothes to me." # CLASS: Octopus
 
 You take a moment to let your heartrate return to normal before saying,
 
-"Well I have something I wanted to ask you."
+"Well I have something I wanted to ask you." 
 
-"Oh? Whatever did you want to ask?"
+"Oh? Whatever did you want to ask?"# CLASS: Octopus
 
 "Would you wanna go out on a date with me sometime, maybe?", you ask tentatively while curling up your hands behinf your back. 
 

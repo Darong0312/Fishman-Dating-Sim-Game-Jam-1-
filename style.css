@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tillana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&family=Tillana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&family=Tillana&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Silkscreen&family=Tillana&family=Titan+One&display=swap');
 
 
 body {
@@ -202,6 +203,12 @@ img {
     font-family: 'Titan One';
     font-size: 20px;
     color: rgb(48, 175, 209);
+}
+
+.Octopus{
+    font-family: 'Fuzzy Bubbles';
+    font-size: 20px;
+    color: rgb(255, 68, 0);
 }
 
 
