@@ -15,10 +15,10 @@ Despite your brief time with everbody, you feel like you've developed a special 
     Bentley. He's totally nerdy which is something that you feel like the two of you can talk about with each other endlessly while having food together over each other's apartments or exploring new restaurants.
     ->blod_end
 
-*Spencer
-     ~possible_choices = SwordFish
-    Spencer. He's definitely handsome and wholesome but more than that you feel like his positive outlook on everything and good vibes is what you want <i> some <i> of in your life. Pun intended.
-    ->sword_end
+// *Spencer
+//      ~possible_choices = SwordFish
+//     Spencer. He's definitely handsome and wholesome but more than that you feel like his positive outlook on everything and good vibes is what you want <i> some <i> of in your life. Pun intended.
+//     ->sword_end
 
 *Jasmine
      ~possible_choices = JellyFish

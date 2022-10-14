@@ -20,8 +20,9 @@ VAR sword_aff = 0
 VAR octo_aff = 0
 
 LIST possible_choices = JellyFish, Octopus, SwordFish, BlobFish, AnimateMan
-
 LIST scene_tracker = BlodScene, SwordScene, OctopusScene, JellyScene
+
+LIST sword_facts = fencing_state,figurine_state,volunteering_state
 
 Anime Man testing # CLASS: AnimeMan
 Jellyfish Testing # CLASS: JellyFish
