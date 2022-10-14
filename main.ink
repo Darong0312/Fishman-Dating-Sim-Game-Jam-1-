@@ -80,15 +80,6 @@ Choose your first date
     ->random_scene
 }
 
-=== choice_check ===
-Make your choice
-
-* {possible_choices ? JellyFish}   Choose Jellyfish as ending      -> jelly_end
-* {possible_choices ? Octopus}     Choose Octopus as ending        -> octopus_end
-* {possible_choices ? SwordFish}   Choose Swordfish as ending      -> sword_end
-* {possible_choices ? BlobFish}    Choose Blobfish as ending       -> jelly_end
-* Not dating: Choose AnimateMan as ending     
--> animate_man
 
 
 === conclusion ===
