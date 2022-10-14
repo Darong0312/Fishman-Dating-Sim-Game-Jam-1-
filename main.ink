@@ -23,10 +23,15 @@ LIST possible_choices = JellyFish, Octopus, SwordFish, BlobFish, AnimateMan
 LIST scene_tracker = BlodScene, SwordScene, OctopusScene, JellyScene
 
 LIST sword_facts = fencing_state,figurine_state,volunteering_state
+LIST octopus_facts = clothes_state, poetry_state, stalk_state, dates_states
+LIST jellyfish_facts = writing_state, book_state, anarchist_state
+LIST blod_facts = movie_state, figurines_state
 
 Anime Man testing # CLASS: AnimeMan
 Jellyfish Testing # CLASS: JellyFish
+Swordfish testing # CLASS: SwordFish
 
+~sword_facts += fencing_state + figurine_state + volunteering_state
 
 -> intro
 === intro ===

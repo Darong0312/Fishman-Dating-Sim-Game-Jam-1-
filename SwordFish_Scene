@@ -4,11 +4,12 @@
 ~ scene_tracker += SwordScene
 ~ scene_visited ++
 <i>Making your choice, you take hold of the fencing sword. You find yourself in an apartment that is just like yours, but not. You notice that there’s a poster of Swordlington, a famous fencer. Though in your own universe he’s a Crab, not a Carp. As you take in your surroundings, you hear a crash and see a young swordfish man on the floor of the kitchen, surrounded by pots and pans. He notices you, and stands up immediately, dusting himself off. <i>
-“Uh… hi.” <i>He says, obviously he wasn’t prepared to have a guest over. Or an intruder you guess.<i>
+“Uh… hi.” # CLASS: SwordFish
+<i>He says, obviously he wasn’t prepared to have a guest over. Or an intruder you guess.<i> 
 
 “Hi. Are you good?” <i>You ask, gesturing vaguely to the pots and pans on the floor.<i>
 
-<i>He looks to the pans, then to you, then back at the pans, then back at you, <i>“They’re not alive, they can’t hear you.”
+<i>He looks to the pans, then to you, then back at the pans, then back at you, <i>“They’re not alive, they can’t hear you.” # CLASS: SwordFish
 
 <i>Oh god he’s stupid.<i>
 
@@ -18,7 +19,7 @@
 // state == false, appear
 
 ==topics==
-* {sword_facts ? fencing_state} “I like your poster.” <i>You look at the fencing sword you picked up,</i> “I guess this is yours then?”
+* {sword_facts ? fencing_state} “I like your poster.” <i>You look at the fencing sword you picked up,</i> “I guess this is yours then?” 
     ->fencing
     
 * {sword_facts ? fencing_state}"I see you have a figurine from 'My Roe Acarpdemia.'" 
@@ -32,75 +33,90 @@
 //I'm not sure how to do this part, but I want to have a part where spencer being clumsy comes up after you are done with ==topics== so that it always comes up at the end. for now I'll put it in it's own section so that it can be manipulated. It's going to be at the bottom though.
     
 ==fencing===
-    <i>Spencer looks at the sword and his face lights up, “I thought I lost that!” he runs up to you and you hand it over. He starts practicing stances right in front of you. It seems like he’s really well practiced. It’s a little funny considering he’s wearing a knitted sweater with pink hearts all over it.</i>
+    
+    <i>Spencer looks at the sword and his face lights up, “I thought I lost that!” he runs up to you and you hand it over. He starts practicing stances right in front of you. It seems like he’s really well practiced. It’s a little funny considering he’s wearing a knitted sweater with pink hearts all over it.</i> # CLASS: SwordFish
 
         “How long have you been fencing?” <i>You ask.</i>
 
-        <i>He shrugs,</i> "About 5 years now."   
+        <i>He shrugs,</i> "About 5 years now." # CLASS: SwordFish
     
     *"Wow! That's impressive!" //affinity up
-        <i>Spencer looks a little sheepish at first, then puffs out his chest with pride,<i> "I'm the best in my team! I love the competition." <i>He replies. He continues to gush for a while about his love of fencing, and his choice of fencing style. He actually sounds a little smart when he talks about it!</i>
+        <i>Spencer looks a little sheepish at first, then puffs out his chest with pride,
+        <i> "I'm the best in my team! I love the competition." <i>He replies. # CLASS: SwordFish
+        He continues to gush for a while about his love of fencing, and his choice of fencing style. He actually sounds a little smart when he talks about it!</i>
        <i> After you show interest, he shows you a couple of moves, (and his muscles hehe) and the two of you spar with a mop and broom. He totally let you win, even though you can tell it's still nice. There was no way that you fully knocked the mop out of his hand. The two of you laugh about it.</i>
-        "You're a lot more fun to hang out with than Octavia, she's kinda weird." <i>He says suddenly.
+        "You're a lot more fun to hang out with than Octavia, she's kinda weird." <i>He says suddenly.# CLASS: SwordFish
         <i>That came from nowhere,</i> "What do you mean?"
-        <i>Spencer shrugs,</i> "I'm not sure. She's nice and all just she doesn't like the sport or competition of fencing... I think that she just likes stabbing..." <i>then he smiles,</i> "But she's really cool, I swear."
+        // yandere??
+        <i>Spencer shrugs,</i> "I'm not sure. She's nice and all just she doesn't like the sport or competition of fencing... I think that she just likes stabbing..." <i>then he smiles,</i> "But she's really cool, I swear. She knits and sometimes her sweaters pop up here. I donate the ones that don't fit me though." # CLASS: SwordFish
+        ~sword_aff++
+        ~octopus_facts += clothes_state
+        {sword_aff}
     ->topics
         
     *"Oh that's uh... Neat." //affinity down
-    <i>Spencer looks put out,<i> "Uh.. yea. It's a lot of work learning to uh..."
+    <i>Spencer looks put out,<i> "Uh.. yea. It's a lot of work learning to uh..." # CLASS: SwordFish
         "To... stab people?" <i>you reply.<i>
-        "Yeah, I guess..?" <i>Spencer mumbles, confused,<i> "But you know.. We don't ACTUALLY stab people with real swords. If we did I think that octopus girl would be more into it."
+        "Yeah, I guess..?" <i>Spencer mumbles, confused,<i> "But you know.. We don't ACTUALLY stab people with real swords. If we did I think that octopus girl would be more into it." # CLASS: SwordFish
         You blink, "Octopus girl?" <i>you ask.<i>
-        <i>Spencer nods,<i> "Yeah, though she doesn't like the competition or the sport of it. She just likes knives and stuff. Kinda creepy but she's chill." 
+        <i>Spencer nods,<i> "Yeah, though she doesn't like the competition or the sport of it. She just likes knives and stuff. Kinda creepy but she's chill." # CLASS: SwordFish
         "Neat..." <i>you're not sure how to respond. Knives are scary. Or maybe... a little hot?<i>
     
     <i>There's an awkward silence, and it doesn't go away. You struggle to find a new topic to talk about.<i>
+    ~sword_aff--
+    {sword_aff}
     ->topics
 
 ==figurine==
-    "Oh yeah!" <i>He picks up the super-buff figurine of a cartoon Bass. He's got hair with big spikes in the front that defy reality. But this is anime we're talking about, when has it ever been about reality?<i> "This is my favorite character! I like how strong and awesome he is. And also how kick-bass he is, and how he's super duper powerful and never loses a fight. But he's also a good guy."
+    "Oh yeah!" <i>He picks up the super-buff figurine of a cartoon Bass. He's got hair with big spikes in the front that defy reality. But this is anime we're talking about, when has it ever been about reality?<i> "This is my favorite character! I like how strong and awesome he is. And also how kick-bass he is, and how he's super duper powerful and never loses a fight. But he's also a good guy." # CLASS: SwordFish
     <i>You nod. Not worrying about the spoilers you know and what happens to that character.<i>
     
-    "But that guy, Bently doesn't get it. He likes the guy with rock powers because he says that he's more 'morally complex' or whatever. When have superheroes ever needed to be morally complex? They punch bad guys and save the day! There doesn't have to be much more to it than that."
+    "But that guy, Bently doesn't get it. He likes the guy with rock powers because he says that he's more 'morally complex' or whatever. When have superheroes ever needed to be morally complex? They punch bad guys and save the day! There doesn't have to be much more to it than that." # CLASS: SwordFish
     
     *"I Like bad guys, actually." //affinity down
-        <i>Spencer gives you an almost heartbroken look,<i> "But why??"
+        <i>Spencer gives you an almost heartbroken look,<i> "But why??" # CLASS: SwordFish
         "They're more interesting, good guys tend to be shallow and boring anyway."
         "But they're mean to people!" <i>he protests.<i>
         <i>You shrug,<i> "I mean, it feels like attempting to always be nice or do good is pointless in the face of true evil, don't you think?" <i>you reply.<i>
         <i>Spencer looks like he's about to cry, his whole worldview invalidated. You can't help but feel like you've kicked a puppy because he's staring at you with huge, sad eyes. 
         It seems like You should probably change the subject.<i>
         ~sword_aff --
+        {sword_aff}
     ->topics
     
     *"I totally agree, there's too much doom and gloom these days." //affinity up
-        <i>Spencer nods excitedly, bouncing from foot to foot,</i> "Right?!?! What's the point of edgy superheroes when you could just make something happy and nice! There's not enough of that!" <i>he laughs,</i> "actually when I was a kid I wanted to be a superhero. Then I found out that people don't have super powers. So now! I fight people with fake swords for fun!" 
+        <i>Spencer nods excitedly, bouncing from foot to foot,</i> "Right?!?! What's the point of edgy superheroes when you could just make something happy and nice! There's not enough of that!" <i>he laughs,</i> "actually when I was a kid I wanted to be a superhero. Then I found out that people don't have super powers. So now! I fight people with fake swords for fun!" # CLASS: SwordFish
         <i>You smile. God he's so dumb.</i> <3
         ~sword_aff ++
+        ~blod_facts += figurine_state
+        {sword_aff}
     ->topics
     
 ==volunteering==
-    "Oh those?" <i>Spencer gestures to the cookingware strewn about.</i>
+    "Oh those?" <i>Spencer gestures to the cookingware strewn about.</i> # CLASS: SwordFish
     "Um... yeah?"
-    <i>Spencer goes to pick them up,<i> "I went to a soup kitchen to volunteer earlier. The group I work with doesn't really have a lot of cooking tools, but I had way too many because I kept ordering them. I wanted to make soup but didn't know which one was best so I kept getting more and more until I had the right size and shape. It took a while but I have them all now!"
+    <i>Spencer goes to pick them up,<i> "I went to a soup kitchen to volunteer earlier. The group I work with doesn't really have a lot of cooking tools, but I had way too many because I kept ordering them. I wanted to make soup but didn't know which one was best so I kept getting more and more until I had the right size and shape. It took a while but I have them all now!" # CLASS: SwordFish
    <i> You look at the large number and realize he's right. There's pots AND pans of all shapes and sizes. Saucepans, woks, big cauldrons, he's got all kinds of stuff,<i> "Have you considered donating them?" <i>you ask.<i>
-    <i>Spencer fixes you with a look,<i> "Um... no? Then how would the soup kitchen make soup?"
+    <i>Spencer fixes you with a look,<i> "Um... no? Then how would the soup kitchen make soup?" # CLASS: SwordFish
     <i>You sigh.<i>
     
     * "Volunteer work is really cool! Giving back to the community is a wonderful hobby." //affinity up
-    Spencer smiles hugely, "Thank you! I'm having a great time! Even though I spill a lot of the soup sometimes..."
+    Spencer smiles hugely, "Thank you! I'm having a great time! Even though I spill a lot of the soup sometimes..." # CLASS: SwordFish
     "I'm sure you have friends who help out though?" You respond. 
-    He nods vigerously, "Jasmine helps me out sometimes when I spill stuff. She also explains things to me, like <i>an- are- key.</i>." He sounds the word out like he hasn't said it much, it's too long a word for him, "She says that helping the community when The Man won't is the best way to topple our <i>olie-garkie-cal oh-pres-ors</i>." 
+    He nods vigerously, "Jasmine helps me out sometimes when I spill stuff. She also explains things to me, like <i>an- are- key.</i>." He sounds the word out like he hasn't said it much, it's too long a word for him, "She says that helping the community when The Man won't is the best way to topple our <i>olie-garkie-cal oh-pres-ors</i>." # CLASS: SwordFish
     The two of you talk about the benefits of helping the community. Not only do you feel like a better person for it, but you also get closer to Spencer.
     ~sword_aff ++
+    ~jellyfish_facts += anarchist_state
+    {sword_aff}
     ->topics
     
     * "What point is there in helping people? People suck." //affinty down
-    <i>Spencer frowns,</i> "Man...You're kind of a bummer, aren't you? Who hurt you bro?"
+    <i>Spencer frowns,</i> "Man...You're kind of a bummer, aren't you? Who hurt you bro?" # CLASS: SwordFish
     <i>You refuse to elaborate on your bleak worldview, or your dark past that makes you think people suck. Or maybe you don't even have a dark past, maybe you just suck. You don't even like volunteering on Christmas, do you? You capitalist. For shame.</i>
-    "You know, you should talk to Jasmine, I didn't understand things about The Man, or about <i>olie-garkie-cal oh-pres-ors</i> but once she taught me about how the world works I wanted to be a superhero too." <i>He shrugs,</i> "Maybe, if you gave a fuck, you could be one too!"
+    "You know, you should talk to Jasmine, I didn't understand things about The Man, or about <i>olie-garkie-cal oh-pres-ors</i> but once she taught me about how the world works I wanted to be a superhero too." <i>He shrugs,</i> "Maybe, if you gave a fuck, you could be one too!" # CLASS: SwordFish
    <i> You blink. Damn. You should probably change the subject.</i>
    ~sword_aff --
+   {sword_aff}
     ->topics
     
 
@@ -108,21 +124,24 @@
 ==Clumsy== //Here's clumsy. I wasn't sure how to end it specifically so I left it a little vague so that it could flow into another scene. Feel free to cut it or change it, or let me know what I should write instead. It's the same end text for both choices. 
 <i>You suddenly become very aware that you have not had anything to drink today. Through everything you've been through you haven't had the chance to hydrate. Even though you are, in fact, a fishman. And now, you feel like you might diedrate.</i>
     "Hey... Can I get a glass of water?" <i>You ask.</i>  
-    "Oh, yeah totally, let me just..." <i>Spencer walks over to the cabinet to get a cup. But as he goes to do so, he trips over the pots and pans again, faceplanting directly into a pot. It's a hard fall, so you hurry over to him. He sits up, a pot sitting on his head, looking embarassed.</i>
-    "I... Uh... Sorry." he grumbles as you help him up.
+    "Oh, yeah totally, let me just..." <i>Spencer walks over to the cabinet to get a cup. But as he goes to do so, he trips over the pots and pans again, faceplanting directly into a pot. It's a hard fall, so you hurry over to him. He sits up, a pot sitting on his head, looking embarassed.</i> # CLASS: SwordFish
+    "I... Uh... Sorry." he grumbles as you help him up. # CLASS: SwordFish
     "That's the second time you've tripped, are you okay?" You ask.
-    "Yeah it's just..." He sighs, "I'm so clumsy... And I'm a fencer... It's a sport all about being light on your feet and I'm always tripping on them. I'm a FRAUD a SHAM!!!" He starts crying. It seems like this was the last straw of a hard day or... something. 
+    "Yeah it's just..." He sighs, "I'm so clumsy... And I'm a fencer... It's a sport all about being light on your feet and I'm always tripping on them. I'm a FRAUD a SHAM!!!" He starts crying. It seems like this was the last straw of a hard day or... something. # CLASS: SwordFish
     
     * "You're right."//affinity down
     <i>Sure you can obliderate all his hopes and dreams. Go for it.
     Just as Spencer is about to respond, you can feel yourself fading away from the universe, the world around you goes hazy, and suddenly...</i>
     ~sword_aff --
+    {sword_aff}
     ->random_scene
     
     * "That's not true!"//affinity up
     <i>You take the pot off his head,</i> "You are a great fencer! It doesn't matter if your clumsy, you kick BASS dude!"
-    <i>Spencer sniffles,</i> "You.. you really think so?"
+    <i>Spencer sniffles,</i> "You.. you really think so?" # CLASS: SwordFish
     "I KNOW so." <i>You reply.</i>
     <i>Just as Spencer is about to respond, you can feel yourself fading away from the universe, the world around you goes hazy, and suddenly...</i>
     ~sword_aff ++
+    {sword_aff}
     ->random_scene
+    
