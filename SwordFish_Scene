@@ -70,7 +70,6 @@
         <i>Spencer shrugs,</i> "I'm not sure. She's nice and all just she doesn't like the sport or competition of fencing... I think that she just likes stabbing..." <i>then he smiles,</i> "But she's really cool, I swear. She knits and sometimes her sweaters pop up here. I donate the ones that don't fit me though." # CLASS: SwordFish
         ~sword_aff++
         ~octopus_facts += clothes_state
-        {sword_aff}
     ->topics
         
     *"Oh that's uh... Neat." //affinity down
@@ -83,7 +82,6 @@
     
     <i>There's an awkward silence, and it doesn't go away. You struggle to find a new topic to talk about.<i>
     ~sword_aff--
-    {sword_aff}
     ->topics
 
 ==figurine==
@@ -110,7 +108,6 @@ You nod, remembering Bentley’s rather dramatic take on action anime, “I hear
         <i>Spencer looks like he's about to cry, his whole worldview invalidated. You can't help but feel like you've kicked a puppy because he's staring at you with huge, sad eyes. 
         It seems like You should probably change the subject.<i>
         ~sword_aff --
-        {sword_aff}
     ->topics
     
     *"I totally agree, there's too much doom and gloom these days." //affinity up
@@ -118,7 +115,6 @@ You nod, remembering Bentley’s rather dramatic take on action anime, “I hear
         <i>You smile. God he's so dumb.</i> <3
         ~sword_aff ++
         ~blob_facts += figurine_state
-        {sword_aff}
     ->topics
     
 ==volunteering==
@@ -150,7 +146,6 @@ You nod, remembering Bentley’s rather dramatic take on action anime, “I hear
     The two of you talk about the benefits of helping the community. Not only do you feel like a better person for it, but you also get closer to Spencer.
     ~sword_aff ++
     ~jellyfish_facts += anarchist_state
-    {sword_aff}
     ->topics
     
     * "What point is there in helping people? People suck." //affinty down
@@ -159,7 +154,6 @@ You nod, remembering Bentley’s rather dramatic take on action anime, “I hear
     "You know, you should talk to Jasmine, I didn't understand things about The Man, or about <i>olie-garkie-cal oh-pres-ors</i> but once she taught me about how the world works I wanted to be a superhero too." <i>He shrugs,</i> "Maybe, if you gave a fuck, you could be one too!" # CLASS: SwordFish
    <i> You blink. Damn. You should probably change the subject.</i>
    ~sword_aff --
-   {sword_aff}
     ->topics
     
 
@@ -176,7 +170,6 @@ You nod, remembering Bentley’s rather dramatic take on action anime, “I hear
     <i>Sure you can obliderate all his hopes and dreams. Go for it.
     Just as Spencer is about to respond, you can feel yourself fading away from the universe, the world around you goes hazy, and suddenly...</i>
     ~sword_aff --
-    {sword_aff}
     ->scene_track
     
     * "That's not true!"//affinity up
@@ -185,7 +178,6 @@ You nod, remembering Bentley’s rather dramatic take on action anime, “I hear
     "I KNOW so." <i>You reply.</i>
     <i>Just as Spencer is about to respond, you can feel yourself fading away from the universe, the world around you goes hazy, and suddenly...</i>
     ~sword_aff ++
-    {sword_aff}
     ->scene_track
     
 === sword_end ===

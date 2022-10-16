@@ -1,7 +1,7 @@
 #theme: dark
+
 ==== meet_blobfish
 # IMAGE: Assets/bently.png
-
 ~ scene_tracker += BlobScene
 ~ scene_visited ++
 
@@ -32,15 +32,15 @@
 
 * {blob_facts !? movie_state}"Your setup at your desk is so organized and clean. What do you do with it?" ->blob_movie_unknown
 
-* {blob_facts ? movie_state}"I saw the TV at your desk. Is that what you and Octavia use to watch movies together? ->blob_movie_knonw
+* {blob_facts ? movie_state}"I saw the TV at your desk. Is that what you and Octavia use to watch movies together? ->blob_movie_known
 
-* {blob_facts !? herring_state}"I saw the Herring Otter posters that you had throughout the apartment. Do you know about the whole series?" ->blob_herring_otter_unknown
+* {blob_facts !? herring_state} "I saw the Herring Otter posters that you had throughout the apartment. Do you know about the whole series?" ->blob_herring_otter_unknown
 
 * {blob_facts ? herring_state} "I heard from Jasmine that you know about Herring Otter. I see you're a fan too from all the posters in here!” ->blob_herring_otter_known
 
 * {blob_facts !? anime_state} "I take it you are a fishman of culture, as well?->blob_anime
 
-* {blob_facts !? anime_state} "I head from spencer that you like anime too”->blob_anime
+* {blob_facts ? anime_state} "I head from spencer that you like anime too”->blob_anime
 
 * Talk about something else -> blob_back
 
@@ -77,7 +77,7 @@
     ->blob_topics
 
 
-===blob_movie_knonw==
+===blob_movie_known==
 
 “Oh yeah, my all in one work-and-entertainment station!” # CLASS: Blobfish
 
@@ -107,7 +107,7 @@
 
 <i>Bentley then looks back at you and says </i>“What do you mainly watch movies for?” # CLASS: Blobfish
 
-You take a moment to consider all the movies you’ve ever watched and answer him back earnestly.
+<i>You take a moment to consider all the movies you’ve ever watched and answer him back earnestly.</i>
 * “I like watching movies because the way story unfolds through both the action, the plot, and the visual storytelling”
     
     ~blob_aff ++
@@ -138,13 +138,13 @@ You take a moment to consider all the movies you’ve ever watched and answer hi
 ===blob_herring_otter_unknown===
 “Know about the series? I’m one of the moderators for the Findom boards and the Ottermore Community server” Bentley says, beaming with pride. 
 
-You think back to your own experiences going to those boards and servers and shudder. 
+<i>You think back to your own experiences going to those boards and servers and shudder. </i>
 
-You give a small salute to Bentley before saying “Thank you for your service.”
+<i>You give a small salute to Bentley before saying </i>“Thank you for your service.”
 
-He laughs “Honestly it’s kinda fun especially with the amount of salt and shade some people throw in the discussion threads.” # CLASS: Blobfish
+<i>He laughs </i>“Honestly it’s kinda fun especially with the amount of salt and shade some people throw in the discussion threads.” # CLASS: Blobfish
 
-“Oh really?” you ask as hypothetical despite your own experiences you’ve had in the past.
+“Oh really?” <i>you ask as hypothetical despite your own experiences you’ve had in the past.</i>
 
 “Yep, here let me ask you the debate of my favorite thread.” he says before getting all quiet and then asking in a comically serious manner “Which is better the books or the movies”? # CLASS: Blobfish
 ->blob_herring_otter_choices
@@ -170,7 +170,7 @@ He laughs “Honestly it’s kinda fun especially with the amount of salt and sh
 === blob_herring_otter_choices===
 ~ jellyfish_facts += book_state
 
-* I like movies more because of the pictures and the action do justice to the fantasy aspect. 
+* "I like movies more because of the pictures and the action do justice to the fantasy aspect."
     ~blob_aff ++
     “Right!? There’s so much work that goes into making a movie that people overlook just because it’s not as accurate. Just because it’s not accurate doesn’t mean that it’s not just as good!” <i>You nod along as he begins to rant about the positives and negatives of movie making. </i> # CLASS: Blobfish
     
@@ -181,7 +181,7 @@ He laughs “Honestly it’s kinda fun especially with the amount of salt and sh
     
     ->blob_topics
     
-* I like the Books more because they do more justice to the story.
+* "I like the Books more because they do more justice to the story."
     ~blob_aff --
     Bentley sighs, “Man, not another one.” He shakes his head.  # CLASS: Blobfish
     
@@ -201,24 +201,24 @@ He laughs “Honestly it’s kinda fun especially with the amount of salt and sh
 
 “Yeah, I’m a bit of a connoisseur of anime.” he says, “It’s more of an art form than anything. An underappreciated one.” # CLASS: Blobfish
 
-You glance at one of the other posters on the wall of a scantily clad frogfish. Their cheeks are covered with pink circles. It’s not an amazing poster. But everyone has their own tastes you suppose.  
+<i>You glance at one of the other posters on the wall of a scantily clad frogfish. Their cheeks are covered with pink circles. It’s not an amazing poster. But everyone has their own tastes you suppose. </i>
 
-“What’s your favorite?” you ask.
+“What’s your favorite?” <i>you ask.</i>
 
-Without hesitation, Bentley answers, “My Eel Roe Acarpdemia. The story is great, and so is the animation. I actually have several figurines of the characters. But someone that I know who is also a swordfish doesn’t appreciate the same characters as me.” he gestures to a glass box resting on top of a bookcase filled with manga. The box is filled with different brightly colored characters in different action p oses. 
+<i>Without hesitation, Bentley answers, </i>“My Eel Roe Acarpdemia. The story is great, and so is the animation. I actually have several figurines of the characters. But someone that I know who is also a swordfish doesn’t appreciate the same characters as me.” he gestures to a glass box resting on top of a bookcase filled with manga. The box is filled with different brightly colored characters in different action poses. 
 
 * “Oh cool, is that Carp Man? The best hero in the show?”
     
     ~sword_facts += figurine_known
     ~blob_aff ++
     
-    Bentley smiles, “Yeah! I got him at a convention. It was the last one at the stall, they sell out pretty fast, and this one is a rare pose, too!” he replies, “The stall owner liked my cosplay and gave me a discount! And later I got to meet the original voice actor! It was such a great day.” # CLASS: Blobfish
+    <i>Bentley smiles, </i>“Yeah! I got him at a convention. It was the last one at the stall, they sell out pretty fast, and this one is a rare pose, too!” <i>he replies,</i> “The stall owner liked my cosplay and gave me a discount! And later I got to meet the original voice actor! It was such a great day.” # CLASS: Blobfish
     
     “That must have been really fun!” You say.
     
-    Bentley nods vigorously, “Oh yea! It was great. Except Spencer took the last Squid Girl figurine… I had been looking for that for a long-bass time. He didn’t even know that it was collectable! He just thought that it was neat looking! I mean, he liked the character but he couldn’t even answer any trivia about the character. He didn’t even know about her super secret backstory that you could only get by going to the website and watching the director’s cut of the show! What a poser.” # CLASS: Blobfish
+    <i>Bentley nods vigorously, </i>“Oh yea! It was great. Except Spencer took the last Squid Girl figurine… I had been looking for that for a long-bass time. He didn’t even know that it was collectable! He just thought that it was neat looking! I mean, he liked the character but he couldn’t even answer any trivia about the character. He didn’t even know about her super secret backstory that you could only get by going to the website and watching the director’s cut of the show! What a poser.” # CLASS: Blobfish
      
-    As Bentley continues to talk about different conventions and such, you notice that the ramen is boiling over and point to the pot behind him. Bentley reacts quickly to it by lowering the heat and stirring before giving an awkward laugh.
+    <i>As Bentley continues to talk about different conventions and such, you notice that the ramen is boiling over and point to the pot behind him. Bentley reacts quickly to it by lowering the heat and stirring before giving an awkward laugh.</i>
     
     ->blob_topics
 
@@ -227,23 +227,17 @@ Without hesitation, Bentley answers, “My Eel Roe Acarpdemia. The story is grea
  
     ~blob_aff --
     
-    Bentley deflates a little bit, and turns back to what he was doing. He sighs and shakes his head, “Damn, another tasteless member of the masses. I thought you were different.” he says, “Carp Man only acts the way he does because his wife, who was allergic to eggs, died in a horrible mayonnaise accident, along with his whole soccer team. His parents also died before he was born. He’s morally complex and moody, a lot cooler than the other happy-go-lucky characters that never lose and are always nice to people. He’s deep. He’s real life.” # CLASS: Blobfish
+    <i>Bentley deflates a little bit, and turns back to what he was doing. He sighs and shakes his head, </i>“Damn, another tasteless member of the masses. I thought you were different.” <i>he says, </i>“Carp Man only acts the way he does because his wife, who was allergic to eggs, died in a horrible mayonnaise accident, along with his whole soccer team. His parents also died before he was born. He’s morally complex and moody, a lot cooler than the other happy-go-lucky characters that never lose and are always nice to people. He’s deep. He’s real life.” # CLASS: Blobfish
     
-    He goes back to stirring the pot, this time his shoulders are slumping.
+    <i>He goes back to stirring the pot, this time his shoulders are slumping.</i>
 
 
 ->blob_topics
 
 
 ===blob_back===
-You start to ask him another question when you begin to feel yourself fade away into your own universe. As you flicker, Bentley looks over at you with a mix of confusion and mild concern before you completely disappear. You guess that your time of talking about nerdy things is done.
+<i>You start to ask him another question when you begin to feel yourself fade away into your own universe. As you flicker, Bentley looks over at you with a mix of confusion and mild concern before you completely disappear. You guess that your time of talking about nerdy things is done.</i>
 
-->scene_track
-
-=== choose_blob
-
-~ possible_choices += BlobFish
-~ date_times ++
 ->scene_track
 
 
