@@ -22,7 +22,7 @@
 * {sword_facts ? fencing_state} “I like your poster.” <i>You look at the fencing sword you picked up,</i> “I guess this is yours then?” 
     ->fencing
     
-* {sword_facts ? fencing_state}"I see you have a figurine from 'My Roe Acarpdemia.'" 
+* {sword_facts ? fencing_state}"I see you have a figurine from 'My Eel Roe Acarpdemia.'" 
     ->figurine
     
 * {sword_facts ? fencing_state} "What are the pots and pans from?"
