@@ -94,9 +94,6 @@ LIST blob_facts = movie_state, figurines_state, herring_state, anime_state
 
 *{scene_visited == 4} You feel yourself caught between universes ->choice_check
 
-* Cheat -> choice_check
-
-
 === player_choice_first ===
 Choose your first date
 

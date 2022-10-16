@@ -28,25 +28,27 @@
 ->blob_topics
 
 === blob_topics ===
-* "Are you a chef because the smell of that ramen is incredible".->blob_foodie
+    * "Are you a chef because the smell of that ramen is incredible". ->blob_foodie
 
-* {blob_facts !? movie_state}"Your setup at your desk is so organized and clean. What do you do with it?" ->blob_movie_unknown
+    * {blob_facts !? movie_state}"Your setup at your desk is so organized and clean. What do you do with it?" ->blob_movie_unknown
 
-* {blob_facts ? movie_state}"I saw the TV at your desk. Is that what you and Octavia use to watch movies together? ->blob_movie_known
+    * {blob_facts ? movie_state}"I saw the TV at your desk. Is that what you and Octavia use to watch movies together? ->blob_movie_known
 
-* {blob_facts !? herring_state} "I saw the Herring Otter posters that you had throughout the apartment. Do you know about the whole series?" ->blob_herring_otter_unknown
+    * {blob_facts !? herring_state} "I saw the Herring Otter posters that you had throughout the apartment. Do you know about the whole series?" ->blob_herring_otter_unknown
 
-* {blob_facts ? herring_state} "I heard from Jasmine that you know about Herring Otter. I see you're a fan too from all the posters in here!” ->blob_herring_otter_known
+    * {blob_facts ? herring_state} "I heard from Jasmine that you know about Herring Otter. I see you're a fan too from all the posters in here!” ->blob_herring_otter_known
 
-* {blob_facts !? anime_state} "I take it you are a fishman of culture, as well?->blob_anime
+    * {blob_facts !? anime_state} "I take it you are a fishman of culture, as well?->blob_anime
 
-* {blob_facts ? anime_state} "I head from spencer that you like anime too”->blob_anime
+    * {blob_facts ? anime_state} "I head from spencer that you like anime too”->blob_anime
 
-* Talk about something else -> blob_back
+    * Talk about something else -> blob_back
 
 
 ===blob_foodie==
-<i>Bentley laughs before smugly smiling, </i>"No, I am far from those who would relegate food to just a financial experience upon which nutrients are exchanged. I am among those who choose to enlighten the masses and spread the doctrine that food is more than what we treat it as." # CLASS: Blobfish
+-
+    <i>Bentley laughs before smugly smiling, </i>"No, I am far from those who would relegate food to just a financial experience upon which nutrients are exchanged. I am among those who choose to enlighten the masses and spread the doctrine that food is more than what we treat it as." # CLASS: Blobfish
+-
 
 <i>Bentley steps away from the pot before striking a pose with one fist in the air </i>"Food is love! The love we show our own bodies; that's food! The love from somebody pouring out their essence for another: that's food! The love coming from the long line of passed down traditions and hopes: that's food!" # CLASS: Blobfish
 
@@ -117,7 +119,7 @@
     <i>The two of you continue down your rabbit hole of movies you like and have yet to watch before Bentley ends the flow with, </i>
 
     {
-    - blob_facts ? movie_state:
+    - octopus_facts !? dates_states:
         “The next time Octavia and I have a movie night, you should come over. I mean we mostly watch horror movies because that's what she always wants to watch but it sounds up your alley too!” # CLASS: Blobfish
         ~octopus_facts += dates_states
         ->blob_topics
