@@ -68,7 +68,6 @@
 
 * “Poetry sounds very romantic.”
     “You have good taste, love. Poetry is indeed one of the most erotic forms of writing anyone could produce. In fact, I often write with Jasmine. She tends to lean towards her fanfictions, but I certainly can’t blame a girl who often has a bloody nose over a fictional character. At least her bloody noses come in handy when I create my blood poetry.” <i>Octavia smiles, playing with the ends of her hair.</i> # CLASS: Octopus
-    ~jellyfish_facts += writing_state
     ~octo_aff++
     -> octopus_state_check
     
@@ -217,13 +216,23 @@ You take a moment to let your heartrate return to normal before saying,
 
 "Oh? Whatever did you want to ask?"# CLASS: Octopus
 
-"Would you wanna go out on a date with me sometime, maybe?", you ask tentatively while curling up your hands behinf your back. 
+"Would you wanna go out on a date with me sometime, maybe?", you ask tentatively while curling up your hands behind your back. 
 
 After what feels like forever, Octavia replies
 { 
 - octo_aff >= 4:
+“Oh my… I would love to.” 
 
+You see her hand cupping her face, completely flushed, as she bashfully looks away from you. She seems to have been caught completely by surprise by your question, but it was welcomed. You vaguely hear her whisper under her breath, “gosh, I never thought my new object of affection would come to me first…”
 
+Then, as if having fully processed the situation, she regains her composure and smiles warmly at you. 
+
+“Oh I’m getting excited now! There are so many things we can do together, oh it will be so much fun!”
+
+Before you can respond, Octavia wraps herself around your arm. Her tender touch makes your skin tingle. This is the first time a person has ever held you like this.
+
+“And now that I have you, I will never let you go.”
+->conclusion
 }
 
-->conclusion
+

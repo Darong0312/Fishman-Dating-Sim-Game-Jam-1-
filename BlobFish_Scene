@@ -1,10 +1,57 @@
 #theme: dark
 
 ==== meet_blobfish
-~ scene_tracker += BlobScene
+~ scene_tracker += BlodScene
 ~ scene_visited ++
 
-blobfish choosing...
+Taking hold of the controller, you close your eyes to blink and when you reopen them you find the walls apartment space filled with posters of various animes, video games, movies, and cartoons you know about but all of them appear to have the characters swapped opposite from what you know them as regularly except the Herring Otter Series posters.  But what really catches your attention is the absolutely savory smell wafting from the kitchen area of . 
+
+You follow the mouth-watering, heavenly scent you notice that this apartment's living area is a little more messier than yours with loads of memorabilia blankets and pillows of various characters in interesting clothing except for the table area which has a rather sizable TV, a laptop with glowing keys, and a few high end game consoles on it. Right next to it looms a giant clear case with what looks like little peop-?
+
+You hear some loud popping and sizzling from the kitchen before you take a whiff an- wait *sniff* is tha- *sniff sniff* Oh, it's ramen *snif sniff sniifff* with the fried tempura vegetables!?  *sniff* AND THE SPICY HOTSAUCE!!
+
+You burst into the kitchen where you find a young blobfish dude just a tad shorter than you, sprinkling some spices into pot from which the blessed aroma is originating from while faintly humming the opening song of 'My Roe Acarpdemia'. Despite your rather sudden entrance, he doesn't notice you until you are basically drooling right next to him.
+
+"BwaAAAHH!" he screams, while yanking out some earpods from his ears and jumping back from you. 
+
+"Who are you? Are you an intruder? Have you come to kill me? You can take my life but you will never take away my spirit or any of my limited edition memorabilia!" he rapidly fires off while taking on a what you assume is some sort of fighting stance.
+
+"N-no, I'm Gilbert your... neighbor I think" you say while wiping the drool off of yourself and scatching your head.
+
+"Oh, okay then..." the blobfish says as he drops his guard very slowly. Once he finishes, he looks at you and then slightly bows before saying "I am Bentley. It's nice to meet you!" 
+
+You pause for a second before bowing back, and once you do, Bentley goes back to stirring the pot like nothing happened.
+
+Bentley looks over at you, and tilts his head as he asks "Oh you're still here, what's up?"
+
+->blob_topics
+
+=== blob_topics ===
+* "Are you a chef because the smell of that ramen is incredible".->blob_foodie
+
+* "Your setup at your desk is so organized and clean. What do you with it?" ->blob_movie
+
+* "I saw the Herring Otter posters that you had throughout the apartment. Do you know about whole series?" ->blob_herring_otter
+
+* "I take it you are a fishman of culture, as well?->blob_anime
+
+
+
+===blob_foodie==
+->blob_topics
+
+
+===blob_movie==
+->blob_topics
+
+
+===blob_herring_otter==
+->blob_topics
+
+
+===blob_anime==
+->blob_topics
+
 
 * choose blobfish       ->choose_blob
 
@@ -18,12 +65,12 @@ blobfish choosing...
 ->scene_track
 
 
-=== blob_end
+=== blod_end
 You verse jump back towards Bentley's apartment where you find him focusing on playing some JRPG on his console.
 
 
 { 
-- blob_aff >= 2:
+- blod_aff >= 2:
 
 
 }

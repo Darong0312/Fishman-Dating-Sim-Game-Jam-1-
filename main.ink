@@ -15,19 +15,19 @@ VAR scene_visited = 0
 VAR choose_none = false
 
 VAR jelly_aff = 0
-VAR blob_aff = 0
+VAR blod_aff = 0
 VAR sword_aff = 0
 VAR octo_aff = 0
 
 VAR octopus_counts = 0
 
 LIST possible_choices = JellyFish, Octopus, SwordFish, BlobFish, AnimateMan
-LIST scene_tracker = BlobScene, SwordScene, OctopusScene, JellyScene
+LIST scene_tracker = BlodScene, SwordScene, OctopusScene, JellyScene
 
 LIST sword_facts = fencing_state,figurine_state,volunteering_state
 LIST octopus_facts = clothes_state, poetry_state, stalk_state, dates_states
-LIST jellyfish_facts = writing_state, book_state, anarchist_state, kinkysub_state
-LIST blob_facts = movie_state, figurines_state
+LIST jellyfish_facts = writing_state, book_state, anarchist_state
+LIST blod_facts = movie_state, figurines_state
 
 
 Anime Man testing # CLASS: AnimeMan
@@ -107,7 +107,7 @@ Swordfish testing # CLASS: SwordFish
 === player_choice_first ===
 Choose your first date
 
-*[Blobfish] -> meet_blobfish
+*[Blodfish] -> meet_blobfish
 *[Jellyfish] ->meet_jellyfish
 *[Swordfish] ->meet_swordfish
 *[Octopus]   ->meet_octopus
@@ -118,7 +118,7 @@ Choose your first date
 
 
 {
-- scene_tracker !? BlobScene && Scene <= 1:     -> meet_blobfish 
+- scene_tracker !? BlodScene && Scene <= 1:     -> meet_blobfish 
 - scene_tracker !? SwordScene && Scene <= 2:    -> meet_swordfish
 - scene_tracker !? JellyScene && Scene <= 3:    -> meet_jellyfish
 - scene_tracker !? OctopusScene && Scene <= 4:  -> meet_octopus
