@@ -29,6 +29,8 @@ LIST octopus_facts = clothes_state, poetry_state, stalk_state, dates_states
 LIST jellyfish_facts = writing_state, book_state, anarchist_state, kinkysub_state
 LIST blob_facts = movie_state, herring_state, anime_state
 
+VAR placeholder = 0
+
 -> intro
 === intro ===
 - <center><b>Goldfish Dating Sim

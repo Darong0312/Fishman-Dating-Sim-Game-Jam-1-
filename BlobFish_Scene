@@ -46,9 +46,9 @@
 
 
 ===blob_foodie==
--
-    <i>Bentley laughs before smugly smiling, </i>"No, I am far from those who would relegate food to just a financial experience upon which nutrients are exchanged. I am among those who choose to enlighten the masses and spread the doctrine that food is more than what we treat it as." # CLASS: Blobfish
--
+~placeholder++
+
+<i>Bentley laughs before smugly smiling, </i>"No, I am far from those who would relegate food to just a financial experience upon which nutrients are exchanged. I am among those who choose to enlighten the masses and spread the doctrine that food is more than what we treat it as." # CLASS: Blobfish
 
 <i>Bentley steps away from the pot before striking a pose with one fist in the air </i>"Food is love! The love we show our own bodies; that's food! The love from somebody pouring out their essence for another: that's food! The love coming from the long line of passed down traditions and hopes: that's food!" # CLASS: Blobfish
 
@@ -80,6 +80,7 @@
 
 
 ===blob_movie_known==
+~placeholder++
 
 “Oh yeah, my all in one work-and-entertainment station!” # CLASS: Blobfish
 
@@ -89,6 +90,7 @@
 ->blob_movie_choices
 
 ===blob_movie_unknown==
+~placeholder++
 
 “Oh yeah, my all in one work-and-entertainment station!” # CLASS: Blobfish
 
@@ -101,6 +103,7 @@
 
 
 === blob_movie_choices
+~placeholder++
 “I mean I would too if my setup in my apartment could handle it.” <i>you say and think to yourself</i> “also if I had more hours in a day I would.”
 
 “I getcha on that, it took me a while to get my setup but movies are more than just how many pixels on a screen there are, or what green screen animations they can fit into the shot, you know?” <i>Bentley says while nodding his head up and down and stirring the pot at the same time.</i>  # CLASS: Blobfish
@@ -138,6 +141,7 @@
     -> blob_topics
     
 ===blob_herring_otter_unknown===
+~placeholder++
 “Know about the series? I’m one of the moderators for the Findom boards and the Ottermore Community server” Bentley says, beaming with pride. 
 
 <i>You think back to your own experiences going to those boards and servers and shudder. </i>
@@ -153,6 +157,7 @@
 
 
 ===blob_herring_otter_known===
+~placeholder++
 <i>Bentley hops a little bit in place out of excitement.</i>
 “I’m one of the moderators for the Findom boards and the Ottermore Community server!” <i>Bentley says, beaming with pride.</i> # CLASS: Blobfish
 
@@ -170,6 +175,7 @@
 ->blob_herring_otter_choices
 
 === blob_herring_otter_choices===
+~placeholder++
 ~ jellyfish_facts += book_state
 
 * "I like movies more because of the pictures and the action do justice to the fantasy aspect."
@@ -200,6 +206,7 @@
 
 
 === blob_anime ==
+~placeholder++
 
 “Yeah, I’m a bit of a connoisseur of anime.” he says, “It’s more of an art form than anything. An underappreciated one.” # CLASS: Blobfish
 
@@ -238,12 +245,14 @@
 
 
 ===blob_back===
+~placeholder++
 <i>You start to ask him another question when you begin to feel yourself fade away into your own universe. As you flicker, Bentley looks over at you with a mix of confusion and mild concern before you completely disappear. You guess that your time of talking about nerdy things is done.</i>
 
 ->scene_track
 
 
 === blob_end
+~placeholder++
 <i>You verse jump back towards Bentley's apartment where you find him focusing on playing some JRPG on his console.
 
 You call out meekly, </i>“hey uh, Bentley?”
