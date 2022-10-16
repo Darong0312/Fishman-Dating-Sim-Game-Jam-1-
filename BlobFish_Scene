@@ -38,9 +38,34 @@ Bentley looks over at you, and tilts his head as he asks "Oh you're still here, 
 
 
 ===blob_foodie==
-Bentley laughs before smugly smiling, "No, I am far from those would who relegate food to just a financial experience upon which nutrients are exchanged. I am among those who choose to enlighten the masses and spread the doctrine that food is more than what we treat it as."
+Bentley laughs before smugly smiling, "No, I am far from those who would relegate food to just a financial experience upon which nutrients are exchanged. I am among those who choose to enlighten the masses and spread the doctrine that food is more than what we treat it as."
 
-Bentley steps away from the pot before striking pose with one fist in the air "Food is the love 
+Bentley steps away from the pot before striking a pose with one fist in the air "Food is love! The love we show our own bodies; that's food! The love from somebody pouring out their essence for another: that's food! The love coming from the long line of passed down traditions and hopes: that's food!"
+
+You start to zone out from Bentley’s explanation and get the feeling that he is either an elitist about food and or has stretched his definition of ‘food’ to encompass everything. However when you zone back in, you recognize that Bentley is pointing a finger at you and is asking you a question.
+
+“I’m sorry, could you repeat that one more time to me?”
+
+Bentley, without missing a beat while still pointing at you “What is food?”
+
+*"Pineapple on pizza: that's food!" 
+
+The second after those words leave your mouth, you feel like you hear a record scratch come from Bentley. He slumps over a bit like he just took a punch to the gut before looking up at you with a look of what looks like genuine concern and pity.
+
+“Pineapple on pizza? That’s a crime” he says defeatedly.
+
+You shrug sheepishly while looking back at him “Can it be if it’s so good?”
+
+He lets out a sigh before stepping back to the pot and stirring once more.  
+->blob_topics
+
+*"Uhh.. Drooling because you forgot lunch; that’s food!"
+
+He takes as if to ponder your response then looks down before exclaiming with his fingers once again pointed towards the ceiling “That’s food!” 
+
+After holding that pose for a good moment, Bentley relaxes and smiles at you 
+
+“I’m so glad that we can be brothers-in-fins about food” he says before going back to stirring the pot.
 ->blob_topics
 
 
@@ -77,11 +102,49 @@ Bentley steps away from the pot before striking pose with one fist in the air "F
 
 === blob_end
 You verse jump back towards Bentley's apartment where you find him focusing on playing some JRPG on his console.
+You verse jump back towards Bentley's apartment where you find him focusing on playing some JRPG on his console. 
 
+You call out meekly, “hey uh, Bentley?”
 
+He doesn’t hear you through his headphones, his attention completely absorbed by being a sweaty tryhard gamer.
+
+Seeing that this is going nowhere, you raise your voice, “Hey Bentley!?”
+
+Bentley pauses the game, pulls off his headphones, and looks at you. “What’s up?”
+
+“Hey uh, are you busy? I just wanted to ask you something.”
+
+“I’m just gaming right now, what is it?” Bentley asks.
+
+You squeeze out all the confidence you have in you for this one moment, you respond “hey uh, I was just thinking that I had a great time with you last time and I uh, was wondering if you would be interested in maybe going out with me?
+
+For a few seconds, Bentley just stares at you blankly and after what feels like forever he replies:
 { 
 - blob_aff >= 2:
+    “Me? You wanna go out with me?” he asks you dumbfoundedly. “You aren’t trolling me are you?” Bentley looks at you with suspicion, but he seems to be shaken about this.
 
+“Why would I lie? I really felt a connection with you and would love to get to know you better.” 
 
+Bentley slouches further into his gamer chair, hand covering his face as if he’s hiding, but you can still see a bit of redness in his cheeks. After a few seconds he looks at you through his fingers, and asks, “are you sure?”
+
+“Of course,” you reaffirm to him.
+
+Bentley pauses for another few seconds, before finally muttering, “‘cause I was feeling the same way about you actually… No one seems to understand good quality content as much as you do. And… sorry for doubting your feelings, I just, guess I believed that maybe I would never get a date because I’m a ‘haha sweaty gamer,’ and when you came to me like this it seemed too good to be true.”
+
+“Oh it’s all good! I’m just glad that we feel the same way.” 
+
+Bentley grabs an extra controller and hands it to you, “in that case then, you wanna fry some noobs with me?”
+->conclusion
 }
 ->conclusion
+{
+- blob_aff < 2:
+“I dunno man, I’m just not really feeling the vibe between us, ya know? I feel like we should get to know each other better before we take that step.”
+“Oh, ok…” you respond, disappointed at being shot down.
+They notice your expression and quickly move to ease your mind.
+“But hey, I’m still down to game with you anytime! No reason why we can’t be friends.”
+A slight wave of relief washes over you. “Oh ok!” you repeat, this time less depressed. “I’ll see you later then.”
+“Catch you at the next midnight launch?” they ask.
+“Definitely,” you smile, heading back from which you came.
+->animate_man
+}

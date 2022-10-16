@@ -236,3 +236,17 @@ Before you can respond, Octavia wraps herself around your arm. Her tender touch 
 ->conclusion
 }
 
+{ 
+- octo_aff < 4:
+    She blushes fervently, and her expression becomes one of nervousness and sadness.
+
+“I’m sorry Gilbert… I just… don’t feel like it’s a good idea. There’s just so much you don’t know about me, you know? I dunno, I just don’t want us to fail because you end up not liking how I am…”
+
+You stumble over words, trying to find the right response. “N-no worries! And hey, I really like what I know about you so far. I’ll do my best to get to know you better and understand who you are.”
+
+She looks relieved. “Oh, thank you for understanding! I’m just not good at these things, I guess. It’s nothing personal, of course. It’s not you, it’s me. I’m just not ready. B-but thanks for asking!”
+
+You smile and turn to head back home. “I’ll see you later then, hopefully.”
+
+->animate_man
+}

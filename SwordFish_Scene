@@ -21,13 +21,20 @@
 ==topics==
 * {sword_facts ? fencing_state} “I like your poster.” <i>You look at the fencing sword you picked up,</i> “I guess this is yours then?” 
     ->fencing
-    
+
+* {sword_facts !? fencing_state} "I hear you like fencing." ->fencing_known
+
 * {sword_facts ? fencing_state}"I see you have a figurine from 'My Eel Roe Acarpdemia.'" 
     ->figurine
     
+* {sword_facts !? fencing_state} "Is that Bass Guy figurine." ->figurine_known
+
+
 * {sword_facts ? fencing_state} "What are the pots and pans from?"
     ->volunteering
     
+* {sword_facts !? fencing_state} “Lemme guess, did you just come back from volunteering?” ->volunteering_known 
+
 * "You feel light headache" 
     ->Clumsy    
 //I'm not sure how to do this part, but I want to have a part where spencer being clumsy comes up after you are done with ==topics== so that it always comes up at the end. for now I'll put it in it's own section so that it can be manipulated. It's going to be at the bottom though.
@@ -39,6 +46,16 @@
         “How long have you been fencing?” <i>You ask.</i>
 
         <i>He shrugs,</i> "About 5 years now." # CLASS: SwordFish
+                ->fencing_choices
+
+===fencing_known===
+    Spencer beams, and begins to flex. It’s a little funny considering he’s wearing a knitted sweater with pink hearts all over it. “Yeah, been working on my technique, too. Guess you could say that I’m one of the best on my team, but it’s no biggie.” 
+
+    “How long have you been fencing?” You ask.
+        He shrugs, "About 5 years now." 
+    ->fencing_choices        
+
+===fencing_choices===
     
     *"Wow! That's impressive!" //affinity up
         <i>Spencer looks a little sheepish at first, then puffs out his chest with pride,
@@ -72,6 +89,17 @@
     <i>You nod. Not worrying about the spoilers you know and what happens to that character.<i>
     
     "But that guy, Bently doesn't get it. He likes the guy with rock powers because he says that he's more 'morally complex' or whatever. When have superheroes ever needed to be morally complex? They punch bad guys and save the day! There doesn't have to be much more to it than that." # CLASS: SwordFish
+            ->figurine_choices
+
+===figurine_known
+    "Oh SHELL yeah!" He picks up the super-buff figurine of a cartoon Bass. He's got hair with big spikes in the front that defy reality. "But that guy, Bentley, doesn't get it. He likes the guy with rock powers because he says that he's more 'morally complex' or whatever. When have superheroes ever needed to be morally complex? They punch bad guys and save the day! There doesn't have to be much more to it than that."
+
+You nod, remembering Bentley’s rather dramatic take on action anime, “I hear he doesn’t really appreciate a good guy as much.” you say.
+
+"Bass Guy’s my favorite character! I like how strong and awesome he is. And also how kick-bass he is, and how he's super duper powerful and never loses a fight. But he's also a good guy." 
+    ->figurine_choices
+
+===figurine_choices
     
     *"I Like bad guys, actually." //affinity down
         <i>Spencer gives you an almost heartbroken look,</i> "But why??" # CLASS: SwordFish
@@ -99,6 +127,21 @@
    <i> You look at the large number and realize he's right. There's pots AND pans of all shapes and sizes. Saucepans, woks, big cauldrons, he's got all kinds of stuff,<i> "Have you considered donating them?" <i>you ask.<i>
     <i>Spencer fixes you with a look,</i> "Um... no? Then how would the soup kitchen make soup?" # CLASS: SwordFish
     <i>You sigh.<i>
+        ->volunteering_choices
+
+==volunteering_known==
+    “WOAH yeaH! Are you psychic??” He asks, staring at you with wonder.
+
+    You laugh, “No, just met Jasmine.”
+
+    He beams at you, “Oh she’s really cool! We went to a soup kitchen to volunteer earlier. The group I work with doesn't really have a lot of cooking tools, but I had way too many pots because I kept ordering them. I wanted to make soup but didn't know which one was best so I kept getting more and more until I had the right size and shape. It took a while but I have them all now!" 
+
+    You look at the large number and realize he's right. There's pots AND pans of all shapes and sizes. Saucepans, woks, big cauldrons, he's got all kinds of stuff, "Have you considered donating them?" you ask.
+
+    “Yeah, but Jasmine told me not to give them to GoodGill because they exploit their workers and don’t pay them a liveable wage.” he shrugs, “But the soup kitchen doesn’t have anywhere to keep this many pots and pans so…” he gestures to the cast-iron chaos around him.
+    ->volunteering_choices
+
+==volunteering_choices== 
     
     * "Volunteer work is really cool! Giving back to the community is a wonderful hobby." //affinity up
     Spencer smiles hugely, "Thank you! I'm having a great time! Even though I spill a lot of the soup sometimes..." # CLASS: SwordFish
@@ -168,7 +211,20 @@ After what feels like forever, Spencer replies:
 This time, he gives you a more fair fight, and the two of you actually go on for a while. Eventually he does beat you, but as soon as he pokes you with the makeshift weapon, he takes your hand and twirls you. You blink, confused, before he pipes up.
 
 “I don’t really care where we go as long as we get to go together, so what do you wanna do?” he asks.
-
-}
 ->conclusion
+}
+
+{
+- sword_aff < 1:
+His expression turns from one of interest to disappointment. “Honestly, I think I’d rather just be friends. I just don’t really feel the same, you know? I feel like we just don’t know each other that well enough yet.”
+
+Your eyes gaze down in thought, processing his response. He’s not wrong, most of his interests are still a mystery to you.
+“Yeah, I guess you’re right. Sorry for throwing that on you so suddenly.”
+
+“All good,” he smiles, returning to what he was working on. “I'll see you around.”
+
+You turn back towards where you came, wondering how to process the rejection
+
+->animate_man
+}
     
