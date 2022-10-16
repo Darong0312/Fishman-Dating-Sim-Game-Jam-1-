@@ -128,7 +128,7 @@ Bentley pauses for another few seconds, before finally muttering, “‘cause I 
 Bentley grabs an extra controller and hands it to you, “in that case then, you wanna fry some noobs with me?” # CLASS: Blobfish
 ->conclusion
 }
-->conclusion
+
 {
 - blob_aff < 2:
 
