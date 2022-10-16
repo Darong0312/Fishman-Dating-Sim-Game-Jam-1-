@@ -7,7 +7,6 @@ INCLUDE Date_Selection
 
 #theme: dark
 
-
 VAR date_times = 0
 VAR first_choice = false
 VAR Scene = 0
@@ -35,7 +34,7 @@ VAR placeholder = 0
 === intro ===
 - <center><b>Goldfish Dating Sim
 - <i> The sun shines brightly through the surface of the water above, casting light on the now shimmering scales of those swimming about the lake. The seaweed dances about through the water, swaying back and forth and gently caressing those that swim past them. As you get closer, you reach out your hands towards the seaweed and glide your hand across the smooth surface. Just then a voice calls out your name: 
-- "I've been waiting for your arrival Gill."
+- <b>"I've been waiting for your arrival Gill."
 - <i> You look off to where the voice called out to you and you see, treading water is the tall form of Cedrift Dogfishory, face shimmering from the sunlight falling through the water and inbetween the dancing seaweed. You swim over to him, albeit hesitantly, and pass by half-orca, half-lobsters doing the harlem shake on the sandy lake floor. They seem to be back up dancers for Lady GobyGoby, who seems to be giving a show to a crowd of rainbow shrimp. What is happening? As your eyes linger on the weird scene unflolding in front of you, you bump into something, and "gracefully" right yourself and mumble sorry to Cedrift. 
 - <b> "Finally, my meal has arrived."
 - <i> Suddenly, Cedrift's face enlongates and shapes itself into the face and neck of a pale eel with blood red eyes and lunges for you with mouth agape, with the intention to swallow you whole. Cedrift's sudden transformation gives you no time to react as he envelopes your body and sends you to the pit of his stomach.

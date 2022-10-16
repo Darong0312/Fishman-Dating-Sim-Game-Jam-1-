@@ -5,9 +5,9 @@
 ~ scene_tracker += BlobScene
 ~ scene_visited ++
 
-<i>Taking hold of the controller, you close your eyes to blink and when you reopen them you find the walls apartment space filled with posters of various animes, video games, movies, and cartoons you know about but all of them appear to have the characters swapped opposite from what you know them as regularly except the Herring Otter Series posters.  But what really catches your attention is the absolutely savory smell wafting from the kitchen area of. </i>
+<i>Taking hold of the controller, you close your eyes to blink and when you reopen them you find the walls apartment space filled with posters of various animes, video games, movies, and cartoons you know about but all of them appear to have the characters swapped opposite from what you know them as regularly except the Herring Otter Series posters.  But what really catches your attention is the absolutely savory smell wafting from the kitchen area. </i>
 
-<i>You follow the mouth-watering, heavenly scent you notice that this apartment's living area is a little more messier than yours with loads of memorabilia blankets and pillows of various characters in interesting clothing except for the table area which has a rather sizable TV, a laptop with glowing keys, and a few high end game consoles on it. Right next to it looms a giant clear case with what looks like little peop-?</i>
+<i>You follow the mouth-watering, heavenly scent and you notice that this apartment's living area is a little more messier than yours with loads of memorabilia blankets and pillows of various characters in interesting clothing except for the table area which has a rather sizable TV, a laptop with glowing keys, and a few high end game consoles on it. Right next to it looms a giant clear case with what looks like little peop-?</i>
 
 <i>You hear some loud popping and sizzling from the kitchen before you take a whiff an- wait *sniff* is tha- *sniff sniff* Oh, it's ramen *snif sniff sniifff* with the fried tempura vegetables!?  *sniff* AND THE SPICY HOTSAUCE!!</i>
 
@@ -28,25 +28,27 @@
 ->blob_topics
 
 === blob_topics ===
-    * "Are you a chef because the smell of that ramen is incredible". ->blob_foodie
+    * ["Are you a chef because the smell of that ramen is incredible".] ->blob.foodie
 
-    * {blob_facts !? movie_state}"Your setup at your desk is so organized and clean. What do you do with it?" ->blob_movie_unknown
+    * {blob_facts !? movie_state} ["Your setup at your desk is so organized and clean. What do you do with it?"] ->movie.unknown
 
-    * {blob_facts ? movie_state}"I saw the TV at your desk. Is that what you and Octavia use to watch movies together? ->blob_movie_known
+    * {blob_facts ? movie_state} ["I saw the TV at your desk. Is that what you and Octavia use to watch movies together?] ->movie.known
 
-    * {blob_facts !? herring_state} "I saw the Herring Otter posters that you had throughout the apartment. Do you know about the whole series?" ->blob_herring_otter_unknown
+    * {blob_facts !? herring_state} ["I saw the Herring Otter posters that you had throughout the apartment. Do you know about the whole series?"] ->herring_otter.unknown
 
-    * {blob_facts ? herring_state} "I heard from Jasmine that you know about Herring Otter. I see you're a fan too from all the posters in here!” ->blob_herring_otter_known
+    * {blob_facts ? herring_state} ["I heard from Jasmine that you know about Herring Otter. I see you're a fan too from all the posters in here!”] ->herring_otter.known
 
-    * {blob_facts !? anime_state} "I take it you are a fishman of culture, as well?->blob_anime
+    * {blob_facts !? anime_state} "I take it you are a fishman of culture, as well?" ->blob_anime.anime
 
-    * {blob_facts ? anime_state} "I head from spencer that you like anime too”->blob_anime
+    * {blob_facts ? anime_state} "I head from spencer that you like anime too”->blob_anime.anime
 
     * Talk about something else -> blob_back
 
-
-===blob_foodie==
+=== blob ===
+=foodie
 ~placeholder++
+
+"Are you a chef because the smell of that ramen is incredible".
 
 <i>Bentley laughs before smugly smiling, </i>"No, I am far from those who would relegate food to just a financial experience upon which nutrients are exchanged. I am among those who choose to enlighten the masses and spread the doctrine that food is more than what we treat it as." # CLASS: Blobfish
 
@@ -78,9 +80,10 @@
     “I’m so glad that we can be brothers-in-fins about food” <i>he says before going back to stirring the pot.</i> # CLASS: Blobfish
     ->blob_topics
 
-
-===blob_movie_known==
+=== movie ===
+=known
 ~placeholder++
+"I saw the TV at your desk. Is that what you and Octavia use to watch movies together?
 
 “Oh yeah, my all in one work-and-entertainment station!” # CLASS: Blobfish
 
@@ -89,8 +92,11 @@
 “Yeah, Octavia and I use it to watch horror movies whenever we have movie nights together!” # CLASS: Blobfish
 ->blob_movie_choices
 
-===blob_movie_unknown==
+=unknown
 ~placeholder++
+"Your setup at your desk is so organized and clean. What do you do with it?"
+
+"Your setup at your desk is so organized and clean. What do you do with it?"
 
 “Oh yeah, my all in one work-and-entertainment station!” # CLASS: Blobfish
 
@@ -102,7 +108,7 @@
 ->blob_movie_choices
 
 
-=== blob_movie_choices
+=== blob_movie_choices ===
 ~placeholder++
 “I mean I would too if my setup in my apartment could handle it.” <i>you say and think to yourself</i> “also if I had more hours in a day I would.”
 
@@ -139,9 +145,13 @@
     
     <i>You nod your head yes back to him before he sighs and says </i>“I guess to each their own, really…”  <i>as he continues to stirr.</i>
     -> blob_topics
-    
-===blob_herring_otter_unknown===
+
+
+===herring_otter===
+=unknown
 ~placeholder++
+"I saw the Herring Otter posters that you had throughout the apartment. Do you know about the whole series?"
+
 “Know about the series? I’m one of the moderators for the Findom boards and the Ottermore Community server” Bentley says, beaming with pride. 
 
 <i>You think back to your own experiences going to those boards and servers and shudder. </i>
@@ -155,9 +165,10 @@
 “Yep, here let me ask you the debate of my favorite thread.” he says before getting all quiet and then asking in a comically serious manner “Which is better the books or the movies”? # CLASS: Blobfish
 ->blob_herring_otter_choices
 
-
-===blob_herring_otter_known===
+=known
 ~placeholder++
+"I heard from Jasmine that you know about Herring Otter. I see you're a fan too from all the posters in here!”
+
 <i>Bentley hops a little bit in place out of excitement.</i>
 “I’m one of the moderators for the Findom boards and the Ottermore Community server!” <i>Bentley says, beaming with pride.</i> # CLASS: Blobfish
 
@@ -174,7 +185,7 @@
 <i>He shows you the thread, where Jasmine is the most vocal person in there ranting about how the books are better than the movies. Bentley chuckles a bit as he wipes a tear away from his eyes “That was a fun weekend.” He then turns to you and asks in a comically serious manner </i>“Which is better, the books or the movies”? # CLASS: Blobfish
 ->blob_herring_otter_choices
 
-=== blob_herring_otter_choices===
+==blob_herring_otter_choices
 ~placeholder++
 ~ jellyfish_facts += book_state
 
@@ -205,7 +216,8 @@
     ->blob_topics
 
 
-=== blob_anime ==
+=== blob_anime ===
+=anime
 ~placeholder++
 
 “Yeah, I’m a bit of a connoisseur of anime.” he says, “It’s more of an art form than anything. An underappreciated one.” # CLASS: Blobfish
@@ -244,7 +256,7 @@
 ->blob_topics
 
 
-===blob_back===
+==blob_back
 ~placeholder++
 <i>You start to ask him another question when you begin to feel yourself fade away into your own universe. As you flicker, Bentley looks over at you with a mix of confusion and mild concern before you completely disappear. You guess that your time of talking about nerdy things is done.</i>
 

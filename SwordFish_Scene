@@ -21,28 +21,30 @@
 // state == true, doesnt appear
 // state == false, appear
 
-==topics==
-* {sword_facts ? fencing_state} “I like your poster.” <i>You look at the fencing sword you picked up,</i> “I guess this is yours then?” 
+===topics===
+* {sword_facts !? fencing_state} [“I like your poster.” <i>You look at the fencing sword you picked up,</i> “I guess this is yours then?”]
     ->fencing
 
-* {sword_facts !? fencing_state} "I hear you like fencing." ->fencing_known
+* {sword_facts ? fencing_state} ["I hear you like fencing."] ->fencing_known
 
-* {sword_facts ? figurine_state}"I see you have a figurine from 'My Eel Roe Acarpdemia.'" 
+* {sword_facts ? figurine_state} ["I see you have a figurine from 'My Eel Roe Acarpdemia."] 
     ->figurine
     
-* {sword_facts !? figurine_state} "Is that Bass Guy figurine." ->figurine_known
+* {sword_facts !? figurine_state} ["Is that Bass Guy figurine."] ->figurine_known
 
 
-* {sword_facts !? volunteering_state} "What are the pots and pans from?"
+* {sword_facts !? volunteering_state} ["What are the pots and pans from?"]
     ->volunteering_unknown
     
-* {sword_facts ? volunteering_state} “Lemme guess, did you just come back from volunteering?” ->volunteering_known 
+* {sword_facts ? volunteering_state} [“Lemme guess, did you just come back from volunteering?”] ->volunteering_known 
 
 * "You feel light headache" ->Clumsy
     
 //I'm not sure how to do this part, but I want to have a part where spencer being clumsy comes up after you are done with ==topics== so that it always comes up at the end. for now I'll put it in it's own section so that it can be manipulated. It's going to be at the bottom though.
     
-==fencing===
+==fencing
+
+“I like your poster.” <i>You look at the fencing sword you picked up,</i> “I guess this is yours then?”
     
     <i>Spencer looks at the sword and his face lights up</i>, “I thought I lost that!” <i>he runs up to you and you hand it over. He starts practicing stances right in front of you. It seems like he’s really well practiced. It’s a little funny considering he’s wearing a knitted sweater with pink hearts all over it.</i> # CLASS: SwordFish
 
@@ -52,14 +54,17 @@
 
                 ->fencing_choices
 
-===fencing_known===
-    Spencer beams, and begins to flex. It’s a little funny considering he’s wearing a knitted sweater with pink hearts all over it. “Yeah, been working on my technique, too. Guess you could say that I’m one of the best on my team, but it’s no biggie.” 
+==fencing_known
+
+"I hear you like fencing."
+
+    Spencer beams, and begins to flex. It’s a little funny considering he’s wearing a knitted sweater with pink hearts all over it. “Yeah, been working on my technique, too. Guess you could say that I’m one of the best on my team, but it’s no biggie.” # CLASS: SwordFish
 
     “How long have you been fencing?” You ask.
-        He shrugs, "About 5 years now." 
+        He shrugs, "About 5 years now."  # CLASS: SwordFish
     ->fencing_choices        
 
-===fencing_choices===
+==fencing_choices
     
     *"Wow! That's impressive!" //affinity up
         <i>Spencer looks a little sheepish at first, then puffs out his chest with pride,
@@ -86,7 +91,8 @@
     ~sword_aff--
     ->topics
 
-==figurine==
+==figurine
+"Is that Bass Guy figurine."
 ~placeholder++
     "Oh yeah!" <i>He picks up the super-buff figurine of a cartoon Bass. He's got hair with big spikes in the front that defy reality. But this is anime we're talking about, when has it ever been about reality?<i> "This is my favorite character! I like how strong and awesome he is. And also how kick-bass he is, and how he's super duper powerful and never loses a fight. But he's also a good guy." # CLASS: SwordFish
     <i>You nod. Not worrying about the spoilers you know and what happens to that character.<i>
@@ -95,6 +101,7 @@
             ->figurine_choices
 
 ===figurine_known
+"I see you have a figurine from 'My Eel Roe Acarpdemia."
 ~placeholder++
     "Oh SHELL yeah!" He picks up the super-buff figurine of a cartoon Bass. He's got hair with big spikes in the front that defy reality. "But that guy, Bentley, doesn't get it. He likes the guy with rock powers because he says that he's more 'morally complex' or whatever. When have superheroes ever needed to be morally complex? They punch bad guys and save the day! There doesn't have to be much more to it than that." # CLASS: SwordFish
 
@@ -122,7 +129,8 @@ You nod, remembering Bentley’s rather dramatic take on action anime, “I hear
         ~blob_facts += anime_state
     ->topics
     
-==volunteering_unknown==
+==volunteering_unknown
+"What are the pots and pans from?"
 ~placeholder++
     "Oh those?" <i>Spencer gestures to the cookingware strewn about.</i> # CLASS: SwordFish
     "Um... yeah?"
@@ -132,7 +140,8 @@ You nod, remembering Bentley’s rather dramatic take on action anime, “I hear
     <i>You sigh.<i>
         ->volunteering_choices
 
-==volunteering_known==
+==volunteering_known
+“Lemme guess, did you just come back from volunteering?”
 ~placeholder++
     “WOAH yeaH! Are you psychic??” He asks, staring at you with wonder. # CLASS: SwordFish
 
@@ -145,7 +154,7 @@ You nod, remembering Bentley’s rather dramatic take on action anime, “I hear
     “Yeah, but Jasmine told me not to give them to GoodGill because they exploit their workers and don’t pay them a liveable wage.” he shrugs, “But the soup kitchen doesn’t have anywhere to keep this many pots and pans so…” he gestures to the cast-iron chaos around him. # CLASS: SwordFish
     ->volunteering_choices
 
-==volunteering_choices==    
+==volunteering_choices  
 ~placeholder++
     * "Volunteer work is really cool! Giving back to the community is a wonderful hobby." //affinity up
     Spencer smiles hugely, "Thank you! I'm having a great time! Even though I spill a lot of the soup sometimes..." # CLASS: SwordFish
@@ -205,11 +214,6 @@ You nod, remembering Bentley’s rather dramatic take on action anime, “I hear
 
 <i>After what feels like forever, Spencer replies:</i>
 
-"Oh really? I hope it isn't a hard question but I'll try my best, buddy!" # CLASS: SwordFish
-
-"Would you wanna go out on a date with me sometime, maybe?", you ask tentatively while curling up your hands behind your back. 
-
-<i>After what feels like forever, Spencer replies:</i>
 { 
 - sword_aff >= 1:
 “Of course! I’m so glad you asked, I was going to ask you the same question, actually!” He says, then starts to laugh, “That wasn’t really a hard question after all!” <i>Spencer takes up a broom, and tosses you a mop in one smooth motion, (or at least smooth for him) and grins, </i>“Winner gets to choose the date!” # CLASS: SwordFish

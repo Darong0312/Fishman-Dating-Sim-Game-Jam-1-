@@ -24,24 +24,25 @@
 ->octopus_state_check
 
 === octopus_state_check ===
-* { octopus_facts ? poetry_state} “I heard you write poetry.”
+* { octopus_facts ? poetry_state} [“I heard you write poetry.”]
     ->poetry_known
-* { octopus_facts !? poetry_state} “You have an ink bottle and feather sitting on your desk. Do you like writing?
+* { octopus_facts !? poetry_state} [“You have an ink bottle and feather sitting on your desk. Do you like writing?"]
     ->poetry_unknown
-* { octopus_facts ? clothes_state} “I heard you enjoy knitting in your spare time.”
+* { octopus_facts ? clothes_state} [“I heard you enjoy knitting in your spare time.”]
     -> knit_known
-* { octopus_facts !? clothes_state} “Is that a ball of yarn on the table?” 
+* { octopus_facts !? clothes_state} [“Is that a ball of yarn on the table?”]
     -> knit_unknown
-* { octopus_facts ? dates_states} “I heard you’re a big fan of the horror genre.” 
+* { octopus_facts ? dates_states} [“I heard you’re a big fan of the horror genre.”]
     -> date_known
-* { octopus_facts !? dates_states} “That’s a lot of horror movie DVD’s you have on your shelf.” 
+* { octopus_facts !? dates_states} [“That’s a lot of horror movie DVD’s you have on your shelf.”]
     ->date_unknown
-* “What’s something you really enjoy doing that you don’t really tell people about?” 
+* [“What’s something you really enjoy doing that you don’t really tell people about?”]
     -> stalk
 * <i>You want to ask something else.</i>
     ->octopus_back
 
-=== poetry_known ===
+
+==poetry_known
 ~octopus_counts++
 “I heard you write poetry.” 
 
@@ -57,8 +58,10 @@
     ~octo_aff ++
     -> octopus_state_check
     
-=== poetry_unknown ===
+==poetry_unknown
 ~octopus_counts++
+“You have an ink bottle and feather sitting on your desk. Do you like writing?"
+
 “Why yes I do! I love all forms of writing, especially poetry!” <i>she replies enthusiastically.</i> # CLASS: Octopus
 
 * “I’ve never been a fan of poetry… but I guess writing is alright.”
@@ -72,7 +75,8 @@
     ~jellyfish_facts += writing_state
     -> octopus_state_check
     
-=== knit_known ===
+==knit_known
+“I heard you enjoy knitting in your spare time.”
 ~octopus_counts++
 “Knitting started out as something to keep me distracted from things that were happening around me, but now I find myself picking up the yarn whenever I feel bored.” <i>Octavia plays with the frayed end of the ball of yarn.</i> # CLASS: Octopus
 
@@ -87,7 +91,8 @@
     ~octo_aff ++
     -> octopus_state_check
 
-=== knit_unknown ===
+==knit_unknown
+“Is that a ball of yarn on the table?”
 ~octopus_counts++
 “Knitting started out as something to keep me distracted from things that were happening around me, but now I find myself picking up the yarn whenever I feel bored.” <i>Octavia plays with the frayed end of the ball of yarn.</i> # CLASS: Octopus
 
@@ -114,8 +119,10 @@
     ~octo_aff ++
     -> octopus_state_check
 
-=== date_known ===
+==date_known
 ~octopus_counts++
+“I heard you’re a big fan of the horror genre.”
+
 “Ah yes, I grew up loving horror movies. I don’t think my childhood could have been any better if I didn’t have those as my companions growing up. And now in this day and age, what better way to spice up a date than with a horror movie?” <i>Octavia gestures.</i> # CLASS: Octopus
 
 * “I’m pretty scared when it comes to the horror genre, so I think I’d rather not waste my time doing things like that…”
@@ -130,8 +137,10 @@
     ~octo_aff ++
     -> octopus_state_check
 
-=== date_unknown ===
+==date_unknown
 ~octopus_counts++
+“That’s a lot of horror movie DVD’s you have on your shelf.”
+
 <i>Octavia looks delighted that you have noticed.</i> “I pride myself with my collection of horror movies. I have the complete set of every series I’ve ever seen and enjoyed.” # CLASS: Octopus
 
 * “Wow that’s… intense. Personally, I’m too much of a coward to watch horror movies. Don’t think I’d be able to enjoy one without being overly squeamish.”
@@ -148,8 +157,9 @@
     -> octopus_state_check
 
 
-=== stalk ===
+==stalk
 ~octopus_counts++
+“What’s something you really enjoy doing that you don’t really tell people about?”
 
 <i>Octavia pauses for a moment.</i> “Hm… well there’s this candy shop I really like visiting. I usually go a couple times a week.” # CLASS: Octopus
 
@@ -196,14 +206,14 @@
     -> octopus_state_check
 
 
-=== octopus_back ===
+==octopus_back
 <i>You want to ask another question, but you feel yourself fading out of existence. Sensing that you might be leaving, Octavia shoves a scarf into your hands.</i> “Here, love, so you can visit again!”
 
 <i>You open your mouth to respond but your vision turns black. When you can open your eyes again, you notice that you have returned to your own apartment.</i>
 
 ->scene_track
 
-=== octopus_end
+==octopus_end
 You verse jump back towards Octavia's apartment where you find her penning away at her desk intently with a stack of envelopes piled up, seeminlgy oblivious to your presence.
 
 As you take a step, she whips around and gives you a menancing stare which sends chills throughout your body before instantly returning back to her calm demeanor before.
