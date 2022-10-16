@@ -176,7 +176,7 @@ You nod, remembering Bentley’s rather dramatic take on action anime, “I hear
     Just as Spencer is about to respond, you can feel yourself fading away from the universe, the world around you goes hazy, and suddenly...</i>
     ~sword_aff --
     {sword_aff}
-    ->random_scene
+    ->scene_track
     
     * "That's not true!"//affinity up
     <i>You take the pot off his head,</i> "You are a great fencer! It doesn't matter if your clumsy, you kick BASS dude!"
@@ -185,7 +185,7 @@ You nod, remembering Bentley’s rather dramatic take on action anime, “I hear
     <i>Just as Spencer is about to respond, you can feel yourself fading away from the universe, the world around you goes hazy, and suddenly...</i>
     ~sword_aff ++
     {sword_aff}
-    ->random_scene
+    ->scene_track
     
 === sword_end ===
 You verse jump back towards Spencer's apartment where you find him practicing his fencing before once again crashing into some conveniently placed pots and pans.

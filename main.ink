@@ -92,15 +92,14 @@ Swordfish testing # CLASS: SwordFish
 
 
 === scene_track ===
-// {first_choice}
+*{scene_tracker !? BlobScene}       BlobFish    -> meet_blobfish 
+*{scene_tracker !? SwordScene}      SwordFish   -> meet_swordfish
+*{scene_tracker !? JellyScene}      Jellyfish   -> meet_jellyfish
+*{scene_tracker !? OctopusScene}    Octopus     -> meet_octopus
 
-{ 
--first_choice == false:
-    ~first_choice = true
-    ->player_choice_first
-    
--first_choice == true:
-    ->random_scene
+
+{ scene_visited == 4:
+    ->choice_check
 }
 
 
@@ -111,24 +110,6 @@ Choose your first date
 *[Jellyfish] ->meet_jellyfish
 *[Swordfish] ->meet_swordfish
 *[Octopus]   ->meet_octopus
-
-=== random_scene ===
-
-~ Scene = RANDOM(1, 4)
-
-
-{
-- scene_tracker !? BlobScene && Scene <= 1:     -> meet_blobfish 
-- scene_tracker !? SwordScene && Scene <= 2:    -> meet_swordfish
-- scene_tracker !? JellyScene && Scene <= 3:    -> meet_jellyfish
-- scene_tracker !? OctopusScene && Scene <= 4:  -> meet_octopus
-}
-
-{ scene_visited == 4:
-    ->choice_check
-- else:
-    ->random_scene
-}
 
 
 
