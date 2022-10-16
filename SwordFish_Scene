@@ -25,19 +25,19 @@
 
 * {sword_facts !? fencing_state} "I hear you like fencing." ->fencing_known
 
-* {sword_facts ? fencing_state}"I see you have a figurine from 'My Eel Roe Acarpdemia.'" 
+* {sword_facts ? figurine_state}"I see you have a figurine from 'My Eel Roe Acarpdemia.'" 
     ->figurine
     
-* {sword_facts !? fencing_state} "Is that Bass Guy figurine." ->figurine_known
+* {sword_facts !? figurine_state} "Is that Bass Guy figurine." ->figurine_known
 
 
-* {sword_facts ? fencing_state} "What are the pots and pans from?"
+* {sword_facts ? volunteering_state} "What are the pots and pans from?"
     ->volunteering
     
-* {sword_facts !? fencing_state} “Lemme guess, did you just come back from volunteering?” ->volunteering_known 
+* {sword_facts !? volunteering_state} “Lemme guess, did you just come back from volunteering?” ->volunteering_known 
 
-* "You feel light headache" 
-    ->Clumsy    
+* "You feel light headache" ->Clumsy    
+    
 //I'm not sure how to do this part, but I want to have a part where spencer being clumsy comes up after you are done with ==topics== so that it always comes up at the end. for now I'll put it in it's own section so that it can be manipulated. It's going to be at the bottom though.
     
 ==fencing===

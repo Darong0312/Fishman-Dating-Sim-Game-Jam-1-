@@ -87,10 +87,10 @@ LIST blob_facts = movie_state, figurines_state, herring_state, anime_state
 
 
 === scene_track ===
-*{scene_tracker !? BlobScene}       Game controller   -> meet_blobfish 
-*{scene_tracker !? SwordScene}      Sword   -> meet_swordfish
-*{scene_tracker !? JellyScene}      Book   -> meet_jellyfish
-*{scene_tracker !? OctopusScene}    Scarf     -> meet_octopus
+*{scene_tracker !? BlobScene}       [Game controller]       -> meet_blobfish 
+*{scene_tracker !? SwordScene}      [Sword]                 -> meet_swordfish
+*{scene_tracker !? JellyScene}      [Book]                  -> meet_jellyfish
+*{scene_tracker !? OctopusScene}    [Scarf]                 -> meet_octopus
 
 *{scene_visited == 4} You feel yourself caught between universes ->choice_check
 
@@ -108,6 +108,10 @@ Choose your first date
 
 
 === conclusion ===
+
+
+- <b> [The End]
+
 
 ->END
 

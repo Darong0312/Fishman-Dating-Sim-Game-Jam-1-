@@ -122,7 +122,7 @@
 
         "Oh my, I went on quite the rant." <i>She turns her head, covering her face with her braids.</i> # CLASS: JellyFish 
         ~jelly_aff ++
-        ~blob_facts += movie_state
+        ~blob_facts += herring_state
         ->jellyfish_state_check
         
     * The movies

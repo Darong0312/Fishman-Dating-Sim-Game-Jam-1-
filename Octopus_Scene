@@ -21,7 +21,6 @@
 
 <i>Octavia smiles charmingly at you.</i> “Sure, love. I can tell you anything you wish to know about me.” # CLASS: Octopus
 
-
 ->octopus_state_check
 
 === octopus_state_check ===
@@ -143,14 +142,12 @@
 
 “Well I wouldn’t mind being there for you when you’re all scared, love. I used to watch horror movies with Bentley all the time, but he’s no fun! He’s just so used to them after playing so many horror games that he doesn’t get frightened much. I’d much rather watch them with someone who’s trembling by my side." <i>Octavia rambles.</i> # CLASS: Octopus
     ~octo_aff ++
+    ~blob_facts += movie_state
     -> octopus_state_check
 
 
 === stalk ===
 ~octopus_counts++
--
-    * “What’s something you really enjoy doing that you don’t really tell people about?” 
--
 
 <i>Octavia pauses for a moment.</i> “Hm… well there’s this candy shop I really like visiting. I usually go a couple times a week.” # CLASS: Octopus
 
