@@ -207,11 +207,11 @@
 
 “What’s your favorite?” <i>you ask.</i>
 
-<i>Without hesitation, Bentley answers, </i>“My Eel Roe Acarpdemia. The story is great, and so is the animation. I actually have several figurines of the characters. But someone that I know who is also a swordfish doesn’t appreciate the same characters as me.” he gestures to a glass box resting on top of a bookcase filled with manga. The box is filled with different brightly colored characters in different action poses. 
+<i>Without hesitation, Bentley answers, </i>“My Eel Roe Acarpdemia. The story is great, and so is the animation. I actually have several figurines of the characters. But someone that I know who is also a swordfish doesn’t appreciate the same characters as me.” he gestures to a glass box resting on top of a bookcase filled with manga. The box is filled with different brightly colored characters in different action poses. # CLASS: Blobfish
 
 * “Oh cool, is that Carp Man? The best hero in the show?”
     
-    ~sword_facts += figurine_known
+    ~sword_facts += figurine_state
     ~blob_aff ++
     
     <i>Bentley smiles, </i>“Yeah! I got him at a convention. It was the last one at the stall, they sell out pretty fast, and this one is a rare pose, too!” <i>he replies,</i> “The stall owner liked my cosplay and gave me a discount! And later I got to meet the original voice actor! It was such a great day.” # CLASS: Blobfish
