@@ -1,7 +1,7 @@
 #theme: dark
 
 ==== meet_blobfish
-~ scene_tracker += BlobScene
+~ scene_tracker += BlodScene
 ~ scene_visited ++
 
 Taking hold of the controller, you close your eyes to blink and when you reopen them you find the walls apartment space filled with posters of various animes, video games, movies, and cartoons you know about but all of them appear to have the characters swapped opposite from what you know them as regularly except the Herring Otter Series posters.  But what really catches your attention is the absolutely savory smell wafting from the kitchen area of . 
@@ -80,14 +80,6 @@ After holding that pose for a good moment, Bentley relaxes and smiles at you
 ===blob_anime==
 ->blob_topics
 
-
-
-
-
-
-
-
-
 * choose blobfish       ->choose_blob
 
 * not choose blobfish   ->scene_track
@@ -120,6 +112,7 @@ You squeeze out all the confidence you have in you for this one moment, you resp
 
 For a few seconds, Bentley just stares at you blankly and after what feels like forever he replies:
 { 
+
 - blob_aff >= 2:
     “Me? You wanna go out with me?” he asks you dumbfoundedly. “You aren’t trolling me are you?” Bentley looks at you with suspicion, but he seems to be shaken about this.
 
@@ -139,6 +132,7 @@ Bentley grabs an extra controller and hands it to you, “in that case then, you
 ->conclusion
 {
 - blob_aff < 2:
+
 “I dunno man, I’m just not really feeling the vibe between us, ya know? I feel like we should get to know each other better before we take that step.”
 “Oh, ok…” you respond, disappointed at being shot down.
 They notice your expression and quickly move to ease your mind.
@@ -147,4 +141,5 @@ A slight wave of relief washes over you. “Oh ok!” you repeat, this time less
 “Catch you at the next midnight launch?” they ask.
 “Definitely,” you smile, heading back from which you came.
 ->animate_man
+
 }

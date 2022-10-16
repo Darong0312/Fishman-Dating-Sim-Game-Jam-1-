@@ -46,6 +46,7 @@
         “How long have you been fencing?” <i>You ask.</i>
 
         <i>He shrugs,</i> "About 5 years now." # CLASS: SwordFish
+
                 ->fencing_choices
 
 ===fencing_known===
@@ -101,6 +102,7 @@ You nod, remembering Bentley’s rather dramatic take on action anime, “I hear
 
 ===figurine_choices
     
+===figurine_choices
     *"I Like bad guys, actually." //affinity down
         <i>Spencer gives you an almost heartbroken look,</i> "But why??" # CLASS: SwordFish
         "They're more interesting, good guys tend to be shallow and boring anyway."
@@ -116,7 +118,7 @@ You nod, remembering Bentley’s rather dramatic take on action anime, “I hear
         <i>Spencer nods excitedly, bouncing from foot to foot,</i> "Right?!?! What's the point of edgy superheroes when you could just make something happy and nice! There's not enough of that!" <i>he laughs,</i> "actually when I was a kid I wanted to be a superhero. Then I found out that people don't have super powers. So now! I fight people with fake swords for fun!" # CLASS: SwordFish
         <i>You smile. God he's so dumb.</i> <3
         ~sword_aff ++
-        ~blob_facts += figurine_state
+        ~blod_facts += figurine_state
         {sword_aff}
     ->topics
     
@@ -143,6 +145,7 @@ You nod, remembering Bentley’s rather dramatic take on action anime, “I hear
 
 ==volunteering_choices== 
     
+==volunteering_choices==    
     * "Volunteer work is really cool! Giving back to the community is a wonderful hobby." //affinity up
     Spencer smiles hugely, "Thank you! I'm having a great time! Even though I spill a lot of the soup sometimes..." # CLASS: SwordFish
     "I'm sure you have friends who help out though?" You respond. 
@@ -203,7 +206,11 @@ You pause for moment, thinking of how to answer his question but also how to ask
 
 After what feels like forever, Spencer replies:
 
+"Oh really? I hope it isn't a hard question but I'll try my best, buddy!" 
 
+"Would you wanna go out on a date with me sometime, maybe?", you ask tentatively while curling up your hands behind your back. 
+
+After what feels like forever, Spencer replies:
 { 
 - sword_aff >= 1:
 “Of course! I’m so glad you asked, I was going to ask you the same question, actually!” He says, then starts to laugh, “That wasn’t really a hard question after all!” Spencer takes up a broom, and tosses you a mop in one smooth motion, (or at least smooth for him) and grins, “Winner gets to choose the date!”
@@ -227,4 +234,3 @@ You turn back towards where you came, wondering how to process the rejection
 
 ->animate_man
 }
-    
