@@ -40,7 +40,7 @@ Bentley looks over at you, and tilts his head as he asks "Oh you're still here, 
 ===blob_foodie==
 Bentley laughs before smugly smiling, "No, I am far from those who would relegate food to just a financial experience upon which nutrients are exchanged. I am among those who choose to enlighten the masses and spread the doctrine that food is more than what we treat it as."
 
-Bentley steps away from the pot before striking a pose with one fist in the air "Food is love! The love we show our own bodies; that's food! The love from somebody pouring out their essence for another: that's food! The love coming from the long line of passed down traditions and hopes: that's food!" 
+Bentley steps away from the pot before striking a pose with one fist in the air "Food is love! The love we show our own bodies; that's food! The love from somebody pouring out their essence for another: that's food! The love coming from the long line of passed down traditions and hopes: that's food!"
 
 You start to zone out from Bentley’s explanation and get the feeling that he is either an elitist about food and or has stretched his definition of ‘food’ to encompass everything. However when you zone back in, you recognize that Bentley is pointing a finger at you and is asking you a question.
 
@@ -80,7 +80,6 @@ After holding that pose for a good moment, Bentley relaxes and smiles at you
 ===blob_anime==
 ->blob_topics
 
-
 * choose blobfish       ->choose_blob
 
 * not choose blobfish   ->scene_track
@@ -93,7 +92,8 @@ After holding that pose for a good moment, Bentley relaxes and smiles at you
 ->scene_track
 
 
-=== blod_end
+=== blob_end
+You verse jump back towards Bentley's apartment where you find him focusing on playing some JRPG on his console.
 You verse jump back towards Bentley's apartment where you find him focusing on playing some JRPG on his console. 
 
 You call out meekly, “hey uh, Bentley?”
@@ -112,7 +112,8 @@ You squeeze out all the confidence you have in you for this one moment, you resp
 
 For a few seconds, Bentley just stares at you blankly and after what feels like forever he replies:
 { 
-- blod_aff >= 2:
+
+- blob_aff >= 2:
     “Me? You wanna go out with me?” he asks you dumbfoundedly. “You aren’t trolling me are you?” Bentley looks at you with suspicion, but he seems to be shaken about this.
 
 “Why would I lie? I really felt a connection with you and would love to get to know you better.” 
@@ -128,8 +129,10 @@ Bentley pauses for another few seconds, before finally muttering, “‘cause I 
 Bentley grabs an extra controller and hands it to you, “in that case then, you wanna fry some noobs with me?”
 ->conclusion
 }
+->conclusion
 {
-- blod_aff < 2:
+- blob_aff < 2:
+
 “I dunno man, I’m just not really feeling the vibe between us, ya know? I feel like we should get to know each other better before we take that step.”
 “Oh, ok…” you respond, disappointed at being shot down.
 They notice your expression and quickly move to ease your mind.
@@ -138,6 +141,5 @@ A slight wave of relief washes over you. “Oh ok!” you repeat, this time less
 “Catch you at the next midnight launch?” they ask.
 “Definitely,” you smile, heading back from which you came.
 ->animate_man
+
 }
-
-
