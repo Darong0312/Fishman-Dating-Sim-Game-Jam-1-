@@ -27,12 +27,7 @@ LIST scene_tracker = BlobScene, SwordScene, OctopusScene, JellyScene
 LIST sword_facts = fencing_state,figurine_state,volunteering_state
 LIST octopus_facts = clothes_state, poetry_state, stalk_state, dates_states
 LIST jellyfish_facts = writing_state, book_state, anarchist_state, kinkysub_state
-LIST blob_facts = movie_state, figurines_state
-
-
-Anime Man testing # CLASS: AnimeMan
-Jellyfish Testing # CLASS: JellyFish
-Swordfish testing # CLASS: SwordFish
+LIST blob_facts = movie_state, figurines_state, herring_state, anime_state
 
 ~sword_facts += fencing_state + figurine_state + volunteering_state
 
