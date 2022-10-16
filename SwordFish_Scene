@@ -181,45 +181,46 @@ You nod, remembering Bentley’s rather dramatic take on action anime, “I hear
     ->scene_track
     
 === sword_end ===
-You verse jump back towards Spencer's apartment where you find him practicing his fencing before once again crashing into some conveniently placed pots and pans.
+<i>You verse jump back towards Spencer's apartment where you find him practicing his fencing before once again crashing into some conveniently placed pots and pans.</i>
 
-He looks up at you, completely unfazed by the fact you saw his little fumble and says with a beaming smile, "Gill, you're back! Did you want to practice some fencing with me?" # CLASS: Swordfish
+<i>He looks up at you, completely unfazed by the fact you saw his little fumble and says with a beaming smile, </i>"Gill, you're back! Did you want to practice some fencing with me?" # CLASS: Swordfish
 
-You pause for moment, thinking of how to answer his question but also how to ask him your own.
+<i>You pause for moment, thinking of how to answer his question but also how to ask him your own.</i>
 
 "Yeah, I do but before I do, I have something I wanted to ask you."
 
-"Oh really? I hope it isn't a hard question but I'll try my best, buddy!" 
+"Oh really? I hope it isn't a hard question but I'll try my best, buddy!" # CLASS: Swordfish
+
+"Would you wanna go out on a date with me sometime, maybe?"<i>, you ask tentatively while curling up your hands behind your back. </i>
+
+<i>After what feels like forever, Spencer replies:</i>
+
+"Oh really? I hope it isn't a hard question but I'll try my best, buddy!" # CLASS: Swordfish
 
 "Would you wanna go out on a date with me sometime, maybe?", you ask tentatively while curling up your hands behind your back. 
 
-After what feels like forever, Spencer replies:
-
-"Oh really? I hope it isn't a hard question but I'll try my best, buddy!" 
-
-"Would you wanna go out on a date with me sometime, maybe?", you ask tentatively while curling up your hands behind your back. 
-
-After what feels like forever, Spencer replies:
+<i>After what feels like forever, Spencer replies:</i>
 { 
 - sword_aff >= 1:
-“Of course! I’m so glad you asked, I was going to ask you the same question, actually!” He says, then starts to laugh, “That wasn’t really a hard question after all!” Spencer takes up a broom, and tosses you a mop in one smooth motion, (or at least smooth for him) and grins, “Winner gets to choose the date!”
+“Of course! I’m so glad you asked, I was going to ask you the same question, actually!” He says, then starts to laugh, “That wasn’t really a hard question after all!” <i>Spencer takes up a broom, and tosses you a mop in one smooth motion, (or at least smooth for him) and grins, </i>“Winner gets to choose the date!” # CLASS: Swordfish
 
-This time, he gives you a more fair fight, and the two of you actually go on for a while. Eventually he does beat you, but as soon as he pokes you with the makeshift weapon, he takes your hand and twirls you. You blink, confused, before he pipes up.
+<i>This time, he gives you a more fair fight, and the two of you actually go on for a while. Eventually he does beat you, but as soon as he pokes you with the makeshift weapon, he takes your hand and twirls you. You blink, confused, before he pipes up.</i> 
 
-“I don’t really care where we go as long as we get to go together, so what do you wanna do?” he asks.
+“I don’t really care where we go as long as we get to go together, so what do you wanna do?” he asks.# CLASS: Swordfish
 ->conclusion
 }
 
 {
 - sword_aff < 1:
-His expression turns from one of interest to disappointment. “Honestly, I think I’d rather just be friends. I just don’t really feel the same, you know? I feel like we just don’t know each other that well enough yet.”
+<i>His expression turns from one of interest to disappointment. </i>“Honestly, I think I’d rather just be friends. I just don’t really feel the same, you know? I feel like we just don’t know each other that well enough yet.” # CLASS: Swordfish
 
-Your eyes gaze down in thought, processing his response. He’s not wrong, most of his interests are still a mystery to you.
+<i>Your eyes gaze down in thought, processing his response. He’s not wrong, most of his interests are still a mystery to you.</i>
+
 “Yeah, I guess you’re right. Sorry for throwing that on you so suddenly.”
 
-“All good,” he smiles, returning to what he was working on. “I'll see you around.”
+“All good,” <i>he smiles, returning to what he was working on. </i>“I'll see you around.” # CLASS: Swordfish
 
-You turn back towards where you came, wondering how to process the rejection
+<i>You turn back towards where you came, wondering how to process the rejection.</i>
 
 ->animate_man
 }

@@ -3,24 +3,24 @@
 
 <i>Despite your brief time with everbody, you feel like you've developed a special connection with...
 
-*{possible_choices ? Octopus} Octavia
+
+* Octavia
     <i>Octavia. She's straightforward and supportive, maybe a little bit much for some people's tastes but you have always felt like you needed someone to help keep you organized and make decisions in your life.
     ->octopus_end
 
-*{possible_choices ? BlobFish} Bentley
+* Bentley
     <i>Bentley. He's totally nerdy which is something that you feel like the two of you can talk about with each other endlessly while having food together over each other's apartments or exploring new restaurants.
     ->blob_end
 
-*{possible_choices ? SwordFish}Spencer
+* Spencer
     <i>Spencer. He's definitely handsome and wholesome but more than that you feel like his positive outlook on everything and good vibes is what you want <i> some <i> of in your life. Pun intended.
     ->sword_end
 
-*{possible_choices ? JellyFish}Jasmine
-    ~possible_choices = JellyFish
+* Jasmine
     <i>Jasmine. She's unabashedly passionate about the things she loves which contrasts with her quiet aloof aura and makes you feel like you wanna be there with her to see what that passion grows into.
     ->jelly_end
 
-*{possible_choices ? AnimateMan}
+* No One
     <i>Nobody. Sure, it was nice meeting everybody but you're not really sure that your first experiences with a person is enough for people to develop a special connection. At least that's what you are telling yourself.</i>
     ~choose_none = true 
     ->animate_man

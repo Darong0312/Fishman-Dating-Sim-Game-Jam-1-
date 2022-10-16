@@ -92,10 +92,9 @@ LIST blob_facts = movie_state, figurines_state, herring_state, anime_state
 *{scene_tracker !? JellyScene}      Book   -> meet_jellyfish
 *{scene_tracker !? OctopusScene}    Scarf     -> meet_octopus
 
+*{scene_visited == 4} You feel yourself caught between universes ->choice_check
 
-{ scene_visited == 4:
-    ->choice_check
-}
+* Cheat -> choice_check
 
 
 === player_choice_first ===

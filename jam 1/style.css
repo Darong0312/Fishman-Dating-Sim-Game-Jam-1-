@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&family=Tillana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&family=Tillana&family=Titan+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Silkscreen&family=Tillana&family=Titan+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -211,7 +211,11 @@ img {
     color: rgb(255, 68, 0);
 }
 
-
+.Blobfish{
+    font-family: 'Orbitron';
+    font-size: 20px;
+    color: rgb(207, 33, 34);
+}
 #controls {
     z-index: 4;
     font-size: 9pt;

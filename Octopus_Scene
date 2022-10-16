@@ -223,17 +223,17 @@ You take a moment to let your heartrate return to normal before saying,
 After what feels like forever, Octavia replies
 { 
 - octo_aff >= 4:
-“Oh my… I would love to.” 
+“Oh my… I would love to.”  # CLASS: Octopus
 
 You see her hand cupping her face, completely flushed, as she bashfully looks away from you. She seems to have been caught completely by surprise by your question, but it was welcomed. You vaguely hear her whisper under her breath, “gosh, I never thought my new object of affection would come to me first…”
 
 Then, as if having fully processed the situation, she regains her composure and smiles warmly at you. 
 
-“Oh I’m getting excited now! There are so many things we can do together, oh it will be so much fun!”
+“Oh I’m getting excited now! There are so many things we can do together, oh it will be so much fun!” # CLASS: Octopus
 
 Before you can respond, Octavia wraps herself around your arm. Her tender touch makes your skin tingle. This is the first time a person has ever held you like this.
 
-“And now that I have you, I will never let you go.”
+“And now that I have you, I will never let you go.” # CLASS: Octopus
 ->conclusion
 }
 
@@ -241,11 +241,11 @@ Before you can respond, Octavia wraps herself around your arm. Her tender touch 
 - octo_aff < 4:
     She blushes fervently, and her expression becomes one of nervousness and sadness.
 
-“I’m sorry Gilbert… I just… don’t feel like it’s a good idea. There’s just so much you don’t know about me, you know? I dunno, I just don’t want us to fail because you end up not liking how I am…”
+“I’m sorry Gilbert… I just… don’t feel like it’s a good idea. There’s just so much you don’t know about me, you know? I dunno, I just don’t want us to fail because you end up not liking how I am…” # CLASS: Octopus
 
 You stumble over words, trying to find the right response. “N-no worries! And hey, I really like what I know about you so far. I’ll do my best to get to know you better and understand who you are.”
 
-She looks relieved. “Oh, thank you for understanding! I’m just not good at these things, I guess. It’s nothing personal, of course. It’s not you, it’s me. I’m just not ready. B-but thanks for asking!”
+She looks relieved. “Oh, thank you for understanding! I’m just not good at these things, I guess. It’s nothing personal, of course. It’s not you, it’s me. I’m just not ready. B-but thanks for asking!” # CLASS: Octopus
 
 You smile and turn to head back home. “I’ll see you later then, hopefully.”
 
