@@ -204,12 +204,7 @@
 "This is an exclusive addition of NibbleGoose X LoveBottom. I'd love it if you'd come back sometime soon. Also…" # CLASS: JellyFish
 
 <i>You don't quite catch her final words as you fade away, leaking to another universe.</i>
-{ 
-- jelly_aff >= 3:
-    ~ possible_choices += JellyFish
 
-
-}
 ->scene_track
     
 
@@ -224,7 +219,9 @@
 
 "I actually wanted to ask you something. Do you wanna go out with me?"
 
-<i>She gasps loudly, one hand over her mouth. Delightfully, she leans the chair over in your direction.</i> "Do you really mean it!? Are you okay with me ranting about NibbleGoose X LoveBottom all day while you pick out my outfits?" # CLASS: JellyFish
+{ 
+- jelly_aff >= 3:
+    <i>She gasps loudly, one hand over her mouth. Delightfully, she leans the chair over in your direction.</i> "Do you really mean it!? Are you okay with me ranting about NibbleGoose X LoveBottom all day while you pick out my outfits?" # CLASS: JellyFish
 
 Scratching your head, "Well, of course, that's why I'm back."
 
@@ -239,3 +236,19 @@ Scratching your head, "Well, of course, that's why I'm back."
 
 }
 ->conclusion
+}
+
+{ 
+- jelly_aff < 3:
+<i>She blushes fervently. her breathing becoming sharp and her eyes widening.</i>
+“Oh flippers… I just… don’t want to disappoint you Gill. There’s just so much you don’t know about me. I want to please you, but I don’t know if I’m ready for it…” # CLASS: JellyFish
+
+<i>You stumble over words, trying to find the right response.</i> “N-no worries!” <i>you respond, trying to ignore the weird feeling she’s giving you.</i> “And I know you wouldn’t disappoint me anyways,” <i>you say, squeezing in a smile.</i>
+
+<i>She looks relieved.</i> “Oh, thank you for understanding! I’m just not good at these things, I guess. It’s nothing personal, of course. It’s not you, it’s me. I’m just not ready. B-but thanks for asking!” # CLASS: JellyFish
+<i>You smile and turn to head back home.</i> “I’ll see you later then, hopefully.” <i>Despite being bummed out, you remember that you have an entire watchlist of anime to get through to help distract yourself from the disappointment.</i>
+
+“You will!” <i>She says back.</i> # CLASS: JellyFish
+->animate_man
+}
+
