@@ -22,7 +22,7 @@
 * {sword_facts ? fencing_state} “I like your poster.” <i>You look at the fencing sword you picked up,</i> “I guess this is yours then?” 
     ->fencing
     
-* {sword_facts ? fencing_state}"I see you have a figurine from 'My Roe Acarpdemia.'" 
+* {sword_facts ? fencing_state}"I see you have a figurine from 'My Eel Roe Acarpdemia.'" 
     ->figurine
     
 * {sword_facts ? fencing_state} "What are the pots and pans from?"
@@ -146,12 +146,28 @@
     ->random_scene
     
 === sword_end ===
-You verse jump back towards Spencer's apartment where you find him practicing his fencing before once again crashing into some conveniently placed
+You verse jump back towards Spencer's apartment where you find him practicing his fencing before once again crashing into some conveniently placed pots and pans.
+
+He looks up at you, completely unfazed by the fact you saw his little fumble and says with a beaming smile, "Gill, you're back! Did you want to practice some fencing with me?" # CLASS: Swordfish
+
+You pause for moment, thinking of how to answer his question but also how to ask him your own.
+
+"Yeah, I do but before I do, I have something I wanted to ask you."
+
+"Oh really? I hope it isn't a hard question but I'll try my best, buddy!" 
+
+"Would you wanna go out on a date with me sometime, maybe?", you ask tentatively while curling up your hands behind your back. 
+
+After what feels like forever, Spencer replies:
 
 
 { 
 - sword_aff >= 1:
+“Of course! I’m so glad you asked, I was going to ask you the same question, actually!” He says, then starts to laugh, “That wasn’t really a hard question after all!” Spencer takes up a broom, and tosses you a mop in one smooth motion, (or at least smooth for him) and grins, “Winner gets to choose the date!”
 
+This time, he gives you a more fair fight, and the two of you actually go on for a while. Eventually he does beat you, but as soon as he pokes you with the makeshift weapon, he takes your hand and twirls you. You blink, confused, before he pipes up.
+
+“I don’t really care where we go as long as we get to go together, so what do you wanna do?” he asks.
 
 }
 ->conclusion
