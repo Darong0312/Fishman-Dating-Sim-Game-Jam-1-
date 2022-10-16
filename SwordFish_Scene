@@ -208,8 +208,8 @@ After what feels like forever, Spencer replies:
 This time, he gives you a more fair fight, and the two of you actually go on for a while. Eventually he does beat you, but as soon as he pokes you with the makeshift weapon, he takes your hand and twirls you. You blink, confused, before he pipes up.
 
 “I don’t really care where we go as long as we get to go together, so what do you wanna do?” he asks.
+->conclusion
 }
-
 {
 - sword_aff < 1:
 His expression turns from one of interest to disappointment. “Honestly, I think I’d rather just be friends. I just don’t really feel the same, you know? I feel like we just don’t know each other that well enough yet.”
@@ -220,10 +220,5 @@ Your eyes gaze down in thought, processing his response. He’s not wrong, most 
 “All good,” he smiles, returning to what he was working on. “I'll see you around.”
 
 You turn back towards where you came, wondering how to process the rejection
-
-
+->animate_man
 }
-
-
-->conclusion
-    
