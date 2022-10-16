@@ -1,6 +1,7 @@
 #theme: dark
 
 ==== meet_octopus
+# IMAGE: Assets/oktavia.png
 ~ scene_tracker += OctopusScene
 ~ scene_visited ++
 

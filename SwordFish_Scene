@@ -1,6 +1,7 @@
 #theme: dark
 
 ==== meet_swordfish
+# IMAGE: Assets/spencer.png
 ~ scene_tracker += SwordScene
 ~ scene_visited ++
 <i>Making your choice, you take hold of the fencing sword. You find yourself in an apartment that is just like yours, but not. You notice that there’s a poster of Swordlington, a famous fencer. Though in your own universe he’s a Crab, not a Carp. As you take in your surroundings, you hear a crash and see a young swordfish man on the floor of the kitchen, surrounded by pots and pans. He notices you, and stands up immediately, dusting himself off. <i>

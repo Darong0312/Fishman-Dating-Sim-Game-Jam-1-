@@ -1,6 +1,7 @@
 #theme: dark
-
 ==== meet_blobfish
+# IMAGE: Assets/bently.png
+
 ~ scene_tracker += BlobScene
 ~ scene_visited ++
 

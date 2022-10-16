@@ -1,6 +1,7 @@
 #theme: dark
 
 ==== meet_jellyfish
+# IMAGE: Assets/jasmine.png
 ~ scene_tracker += JellyScene
 ~ scene_visited ++
 
