@@ -68,6 +68,7 @@
 
 * “Poetry sounds very romantic.”
     “You have good taste, love. Poetry is indeed one of the most erotic forms of writing anyone could produce. In fact, I often write with Jasmine. She tends to lean towards her fanfictions, but I certainly can’t blame a girl who often has a bloody nose over a fictional character. At least her bloody noses come in handy when I create my blood poetry.” <i>Octavia smiles, playing with the ends of her hair.</i> # CLASS: Octopus
+    ~jellyfish_facts += writing_state
     ~octo_aff++
     -> octopus_state_check
     

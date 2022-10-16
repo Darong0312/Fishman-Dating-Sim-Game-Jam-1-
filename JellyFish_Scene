@@ -4,18 +4,221 @@
 ~ scene_tracker += JellyScene
 ~ scene_visited ++
 
-jellyfish choosing...
+<i>Making up your mind, you clasp Herring Otter: and the Half-Otter Merprince to your chest, longing for the love of another. Visions of Cedrift send a jolt down your spine. In the next instant, you find yourself amidst chaos. Books scrambled everywhere, pages pinned to walls, and the room drowned in blue, pink, and purple posters. In a sea of papers seats a person typing furiously on her computer. Oh, GOD, please liberate this feeling of loneliness; let this be the one that sets you free!</i>
 
-* choose jellyfish          ->choose_jelly
+<i>Bangs cover her face, twine braids flow along her sides, and her skin shines a stunning pale blue. This could be no other than Jasmine.</i>
 
-* not choose jellyfish      ->scene_track
+// Fluff Text // 
+* [Wait for her to speak] ->wait
+* [Introduce yourself] ->Intro
 
-=== choose_jelly
+= Intro
+    <i>You clear your throat to break the silence.</i>
+    
+    "I'm Gill the Goldfish Man. It's nice to meet you, Jasmine."
+    
+    <i>Still looking at the ground, she stammers.</i> 
+    
+    "Umm… yeah, Ja-Jasmine, that's me." She blushes. "I've been waiting for you." # CLASS: JellyFish
+    ->jellyfish_state_check
+    
+= wait
+    <i>The moment passes in utter silence fear creeps up inside of you. You must act now, or she will drift from your reach.</i>
 
-~ possible_choices += JellyFish
-~ date_times ++
+    * [Give her more time] -> wait_2
+    * [It's now or never] -> intro_2
 
+= intro_2
+    <i>Not baring the silence any longer, you speak up</i>
+    
+    “Oh hi, I’m….”
+    
+    “Umm… I…” # CLASS: JellyFish
+    
+    <i>She speaks up at the same time. Her body sinks into the chair, and after a while, she says,</i> “you can go first.” <i>Then buries her head into the chair.</i> # CLASS: JellyFish
+    ->Intro
+    
+= wait_2 
+    <i>A few seconds pass, and she straightens up in her chair and heaves a long sigh.</i>
+    
+    “Jasmin, nice to meet you.” # CLASS: JellyFish
+    ->Intro
+// End of Fluff Text // 
+
+
+=== jellyfish_state_check ===
+* { jellyfish_facts ? writing_state} [“I've heard you hold writing sessions with Octavia...”]
+    ->writing.known
+* { jellyfish_facts !? writing_state} ["I came to return your book..."]
+    ->writing.unknown
+* { jellyfish_facts ? book_state} [“So you and Bentley like arguing about whether the ‘Herring Otter’ books or the movies are better"]
+    ->book.known
+* { jellyfish_facts !? book_state} [Take a closer look at the posters scattered across the floor]
+    ->book.unknown
+* { jellyfish_facts ? anarchist_state} [“Spencer told me how you both love volunteer work...]
+    ->anarchist.known
+* { jellyfish_facts !? anarchist_state} [Inquire about the symbol in the book]
+    ->anarchist.unknown
+* “Other than the obvious, what does Jasmine like”
+    ->kinkysub
+    
+  
+=== writing === 
+= known
+"I've heard you hold writing sessions with Octavia where you write fanfiction of Herring Otter called NibbleGoose X LoveBottom. I've been dying to read a romance between Lumi Lovegoose and Nibble Long Bottomfeeder. No one else understands the need for such a wonderful ship. Like the carefree Lovegoose who does things differently from the norm, breaking society misconceptions, dating the timid and clumsy Bottomfeeder who will do anything for his friends truly a nibble through the ages, one can't stop but gape in awe."
+~jelly_aff ++
+->jellyfish_state_check
+
+= unknown
+“I came to return your book. It ended up leaking into my universe and landing on my face.”
+
+<i>With both hands on her cheek and head tilted, she says,</i> “Oh, sorry about that. Did it feel good, at least? The smell of ink on paper is intoxicating; it’s the best feeling in the world. I wish I were there with you.” # CLASS: JellyFish
+
+“Speaking of the wondrous joys of ink, do you enjoy writing in your free time, Gill?” # CLASS: JellyFish
+
+    * “I don’t write often, but when I do, I thoroughly enjoy it!”
+
+    <i>She perked up, and for the first time, I saw her eclectic white eyes peaking from underneath her bangs.</i>
+
+    “This is delightful! I usually hold writing sessions with Octavia. They even use my blood to write their poetry! I’m glad my bloody nose can be of use to such an understanding friend. Isn’t this great? You should join us every now and then; I’ll even write anything you come up with!” # CLASS: JellyFish
+    ~jelly_aff ++
+    ~octopus_facts += poetry_state
+    ->jellyfish_state_check
+    
+    * "Not really I’m an avid reader, but writing seems too daunting of a task."
+
+    “What a shame I thought you could join my writing group…” <i>she glances into the distance pouting with disappointment.</i> # CLASS: JellyFish
+    ~jelly_aff -- 
+    ->jellyfish_state_check
+    
+
+
+=== book === 
+= known
+“So you and Bentley like arguing about whether the ‘Herring Otter’ books or the movies are better. I assure you I think the books are ten times better. The expansive world-building and the character development are just amazing. The movies lack the depth and time to serve the characters justice. Especially Gooby. I mean, they skipped the part where he saves Herring Otter! Truly unacceptable!”
+
+<i>She bolts from her chair, grinning from ear to ear.</i> “Yes, yes!” <i>Her hair curls up, emitting electricity all over her head</i> “truly spectacular, someone who finally understands the superiority of books!” I can’t believe this is real. Pinch me so I can wake up from this dream!” # CLASS: JellyFish
+
+<i>I pinch her arms feeling as excited as her.</i>
+
+<i>She cracked a grin so wide it kind of unnerved me. The instant I step back, her smile vanishes… maybe my mind is playing tricks on me; I must have imagined it.</i>
+~jelly_aff ++
+->jellyfish_state_check
+
+= unknown
+<i>You take a closer look at the posters scattered across the floor and realize most of them are title covers of books, but some appear to be referencing movies. You pick one up at random. Across the image is the title Herring Otter: and the Order of the Angel Fish, The movie.</i>
+
+"I'm assuming you've also watched all of the Herring Otter movies?"
+
+"Of course, I would be a fack fan otherwise. like, come on Gill, that answer should have been obvious." # CLASS: JellyFish
+ 
+"With that in mind, what about you Gill? Which do you prefer?" # CLASS: JellyFish
+
+    * The books
+        "I assure you, I think the books are ten times better. The expansive world-building and the character development are just amazing. The movies lack the depth and time to serve the characters justice. Yes, the movie has nice visuals and sound but can it serve Buttetrix Leshrimp the justice she deserves? Absolutely not! She's truly mental in the book, the embodiment of a perfect character!" # CLASS: JellyFish
+
+        "Oh my, I went on quite the rant." <i>She turns her head, covering her face with her braids.</i> # CLASS: JellyFish 
+        ~jelly_aff ++
+        ~blob_facts += movie_state
+        ->jellyfish_state_check
+        
+    * The movies
+        "Oh, umm… we-well now. I simply can't comprehend how people could like the movies more than the books. I guess you get flashy colors in the movie, but what about the expansive world and the infinite depth of the characters in the books? Well, I probably won't change your mind when it's already made up." # CLASS: JellyFish
+        ~jelly_aff --
+        ->jellyfish_state_check
+
+
+=== anarchist === 
+= known
+“Spencer told me how you both love volunteer work and that you give back to the community every chance you get. That is really kind of you! Can I join you both sometime in the future?”
+
+“Totally! I’ll even teach you my favorite word I already taught Spence, but for now, I’ll just give you a sneak peek; it’s called anarchy.” # CLASS: JellyFish
+~jelly_aff ++
+->jellyfish_state_check
+
+= unknown
+<i>Earlier today, you saw the symbol A in a circle drawn on the front page of Herring Otter: and the Half-Otter Merprince you don’t remember seeing one in your copy of the book. Could it stand for nonother than Albacore Dumbledory?</i>
+
+“About this book, does the A on the first page stand for Albacore Dumbledory?”
+
+“Hmm… That’s a secret,” <i>she holds her finger to her lips</i> “however, that means you’ve read the series before, right?” # CLASS: JellyFish
+
+“That’s right. Actually, I even have my own copy.”
+
+“I see. Well then, who’s your favorite character Gill?” # CLASS: JellyFish
+
+    * "Hermoray Angler"
+        "All about rules and nonsense. Authority and rules are worthless to me. Really Gill, I mean, she does become less rule obsessed and grows a spine to defy such stupid concepts, but still, Gill, I expected more from you." # CLASS: JellyFish
+        ~jelly_aff --
+        ->jellyfish_state_check
+        
+    * "Gobby"
+        "One who defies authority for the greater good of those around them, truly a role model for us all." # CLASS: JellyFish 
+        
+        "Since you have such great taste, I’ll let you in on something special." # CLASS: JellyFish  
+
+        "The Man has this stupid rule where you can’t sell fanfiction as physical copies, but you know what? I taught Spencer the wonders of helping others, so now he helps me with donating my fanfiction to the community since I have to rely on the pen name LoveBottom because of that stupid law I have to keep my real identity a secret, so for now, he acts as the face of the operation. I’ve even taught him my favorite word... Anarchy. I hope he actually remembers what it means." # CLASS: JellyFish  
+        ~jelly_aff ++
+        ~sword_facts += volunteering_state
+        ->jellyfish_state_check
+        
+    * "Dolory Chumbridge"
+        "Unfortunate. She’s the embodiment of everything I hate about the series. I mean, just reading her name makes me want to curse her all day. All this nonsense about rules and authorities. What a shame, Gil. I thought we could come to an understanding." # CLASS: JellyFish
+    ~jelly_aff--
+    ->jellyfish_state_check
+
+
+=== kinkysub === 
+<i>You think to yourself, other than the obvious, what does Jasmine like?</i> 
+
+<i>While you’re stuck in thought, she steps away from her desk and strides toward you.</i>
+
+“Hey, Gill… what do you think of my hair? You should let me know how you’d like me to style it next time.” # CLASS: JellyFish
+
+<i>Well, that came out of the blue, but before you even give an answer, she drags you over to her closet.</i>
+
+“See, you can even help me choose clothes that match my hair whenever you come over. Oh, That would make me so happy.” # CLASS: JellyFish
+
+“I mean…” 
+
+“wait, wait, WAIT! You don’t have to answer me at the moment. We can think about this over a meal if you have time. I’ll even let you decide on the restaurant”. # CLASS: JellyFish
+
+    * “I think it’s cute that you want me to decide everything for you, but let’s not rush. I’d like to get to know you better first.”
+        ~jelly_aff++
+        ~jellyfish_facts += kinkysub_state
+        ->jellyfish_state_check
+    * “Wow, can’t you decide anything on your own?”
+        <i>She looks down to the ground divested? Well, whatever, she should be able to formulate her own opinion your not her babysitter, right?</i>
+        ~jelly_aff--
+        ->jellyfish_state_check
+
+=== jellyfish_end_date === 
+"If you choose to date me, I'll let you decide how I dress every day. Wouldn't that be fun? I can be your personal doll!" <i>she laughs gleefully.</i> # CLASS: JellyFish
+
+<i>You're about to give your final answer when you realize your hands are becoming transparent. It seems you are leaking out of this universe.</i>
+
+"Wait, Gill! Before you go, take this with you." # CLASS: JellyFish
+
+<i>She hands me a leather-bound book.</i>
+
+"This is an exclusive addition of NibbleGoose X LoveBottom. I'd love it if you'd come back sometime soon. Also…" # CLASS: JellyFish
+
+<i>You don't quite catch her final words as you fade away, leaking to another</i> universe.
+{ 
+- jelly_aff >= 3:
+    ~ possible_choices += JellyFish
+
+
+}
 ->scene_track
+    
+    
+// === choose_jelly
+
+// ~ possible_choices += JellyFish
+// ~ date_times++
+
+// ->scene_track
 
 
 === jelly_end
@@ -29,10 +232,4 @@ Your heart skips a beat as you shyly work up the courage to ask her.
 
 "I actually wanted to ask you something. Do you wanna go out with me?"
 
-
-{ 
-- jelly_aff >= 3:
-
-
-}
 ->conclusion

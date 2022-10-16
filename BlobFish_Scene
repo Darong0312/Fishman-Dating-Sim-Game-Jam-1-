@@ -1,7 +1,7 @@
 #theme: dark
 
 ==== meet_blobfish
-~ scene_tracker += BlodScene
+~ scene_tracker += BlobScene
 ~ scene_visited ++
 
 blobfish choosing...
@@ -18,12 +18,12 @@ blobfish choosing...
 ->scene_track
 
 
-=== blod_end
+=== blob_end
 You verse jump back towards Bentley's apartment where you find him focusing on playing some JRPG on his console.
 
 
 { 
-- blod_aff >= 2:
+- blob_aff >= 2:
 
 
 }
