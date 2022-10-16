@@ -4,7 +4,6 @@
 ~ scene_tracker += JellyScene
 ~ scene_visited ++
 
-
 <i>Making up your mind, you clasp Herring Otter: and the Half-Otter Merprince to your chest, longing for the love of another. Visions of Cedrift send a jolt down your spine. In the next instant, you find yourself amidst chaos. Books scrambled everywhere, pages pinned to walls, and the room drowned in blue, pink, and purple posters. In a sea of papers seats a person typing furiously on her computer. Oh, GOD, please liberate this feeling of loneliness; let this be the one that sets you free!</i>
 
 <i>Bangs cover her face, twine braids flow along her sides, and her skin shines a stunning pale blue. This could be no other than Jasmine.</i>
@@ -130,14 +129,17 @@
         ~jelly_aff --
         ->jellyfish_state_check
 
-* choose jellyfish          ->choose_jelly
 
-* not choose jellyfish      ->scene_track
+=== anarchist === 
+= known
+“Spencer told me how you both love volunteer work and that you give back to the community every chance you get. That is really kind of you! Can I join you both sometime in the future?”
 
-=== choose_jelly
+“Totally! I’ll even teach you my favorite word I already taught Spence, but for now, I’ll just give you a sneak peek; it’s called anarchy.” # CLASS: JellyFish
+~jelly_aff ++
+->jellyfish_state_check
 
-~ possible_choices += JellyFish
-~ date_times ++
+= unknown
+<i>Earlier today, you saw the symbol A in a circle drawn on the front page of Herring Otter: and the Half-Otter Merprince you don’t remember seeing one in your copy of the book. Could it stand for nonother than Albacore Dumbledory?</i>
 
 “About this book, does the A on the first page stand for Albacore Dumbledory?”
 
@@ -232,10 +234,4 @@ Scratching your head, "Well, of course, that's why I'm back."
 
 <i>Jasmine is so excited that she accidentally tips her chair over from her outburst of joy. There’s a flash of panic on your face as you step forward to break her fall, catching her in your arms. With her face just a few inches away from yours, she blushes furiously,</i> “G-gill, I look f-forward to being in your care.” # CLASS: JellyFish
 
-
-{ 
-- jelly_aff >= 3:
-
-
-}
 ->conclusion
