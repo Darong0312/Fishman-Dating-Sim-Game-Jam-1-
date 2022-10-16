@@ -203,7 +203,7 @@
 
 "This is an exclusive addition of NibbleGoose X LoveBottom. I'd love it if you'd come back sometime soon. Also…" # CLASS: JellyFish
 
-<i>You don't quite catch her final words as you fade away, leaking to another</i> universe.
+<i>You don't quite catch her final words as you fade away, leaking to another universe.</i>
 { 
 - jelly_aff >= 3:
     ~ possible_choices += JellyFish
@@ -212,24 +212,24 @@
 }
 ->scene_track
     
-    
-// === choose_jelly
-
-// ~ possible_choices += JellyFish
-// ~ date_times++
-
-// ->scene_track
-
 
 === jelly_end
-You verse jump back towards Jasmine's apartment where you find her quickly typing at her computer with small fits of giggling breaking up her rhythym but she doesn't seem to notice you.
+<i>You verse jump back towards Jasmine's apartment where you find her typing away at her computer with small fits of giggles breaking up her rhythm but she doesn't seem to notice you.</i>
 
-You take a step forward and trip on a power cable stretched across the floor, stumbling loudly. She spins around in her chair, startled, and gasps excitedly.
+<i>You take a step forward and trip on a power cable stretched across the floor, stumbling loudly. She spins around in her chair, startled, and gasps excitedly.</i>
 
-"Hey!" she smiles. "I was just telling my friends about you! What are you doing here?"
+"Hey!" <i>She smiles.</i> "I was just telling my friends about you! What are you doing here?" # CLASS: JellyFish
 
-Your heart skips a beat as you shyly work up the courage to ask her.
+<i>Your heart skips a beat as you shyly work up the courage to ask her.</i>
 
 "I actually wanted to ask you something. Do you wanna go out with me?"
+
+<i>She gasps loudly, one hand over her mouth. Delightfully, she leans the chair over in your direction.</i> "Do you really mean it!? Are you okay with me ranting about NibbleGoose X LoveBottom all day while you pick out my outfits?" # CLASS: JellyFish
+
+Scratching your head, "Well, of course, that's why I'm back."
+
+"It's like a dream come true!" <i>You can hear the utter excitement in her voice. Oh, if only you could listen to that for the rest of your life.</i> # CLASS: JellyFish
+
+<i>Jasmine is so excited that she accidentally tips her chair over from her outburst of joy. There’s a flash of panic on your face as you step forward to break her fall, catching her in your arms. With her face just a few inches away from yours, she blushes furiously,</i> “G-gill, I look f-forward to being in your care.” # CLASS: JellyFish
 
 ->conclusion
